@@ -1,1 +1,84 @@
+:root {
+  font-family: 'Neue Frutiger World', 'Verdana',  'Hiragino Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+}
+html {
+  max-width: 90ch;
+  margin: auto;
+  font-size: 11pt;
+}
+h1,
+h2,
+h3 {
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+h1 {
+  font-size: 3.5rem;
+  margin-top: 3.5rem;
+}
+
+h2 {
+  font-size: 2.25rem;
+  margin-top: 2.25rem;
+  padding-bottom: 0.5rem;
+  display: block;
+  border-bottom: solid 2px;
+}
+
+h3 {
+  font-size: 1.8rem;
+  margin-top: 1.8rem;
+  display: block;
+  padding:5px;
+  background-color: #ccc;
+}
+h4 {
+  font-size: 1.6rem;
+  margin: 1.6rem 0 0 0;
+}
+h5 {
+  font-size: 1.4rem;
+  margin: 1.4rem 0 0 0;
+}
+li{
+  font-size: 120%;
+  line-height: 2.0;
+}
+section.level1,section.level2 {
+  margin-bottom: 5rem;
+}
+section.level3{
+  margin-top: 2.5rem;
+}
+section.level4{
+  margin-top: 2rem;
+}
+section.level5{
+  margin-top: 1.5rem;
+}
+strong {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #bb8815;
+}
+table{
+  width: 100%;
+  border-collapse: collapse;
+}
+th,td{
+  padding:0.6rem;
+  border: solid 2px #fff;
+  border-collapse: collapse;
+}
+th{
+  background-color: #eee;
+}
+td{
+  background-color: #f6f0d3;
+}
+.level1 { page-break-before: always; }
 
