@@ -70,7 +70,7 @@ table{
   border-collapse: collapse;
 }
 th,td{
-  padding:0.6rem;
+  padding:0.4rem;
   border: solid 2px #fff;
   border-collapse: collapse;
 }
@@ -82,9 +82,4 @@ td{
 }
 .level1 { page-break-before: always; }
 
-@page {
-  size: 182mm 257mm;
-  margin-top: 25mm;
-  margin-bottom: 33mm;
-/* 中略 */
-}
+@page {}
