@@ -81,3 +81,10 @@ td{
   background-color: #f6f0d3;
 }
 .level1 { page-break-before: always; }
+
+@page {
+  size: 182mm 257mm;
+  margin-top: 25mm;
+  margin-bottom: 33mm;
+/* 中略 */
+}
