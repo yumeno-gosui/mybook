@@ -53,12 +53,15 @@ section.level1,section.level2 {
 }
 section.level3{
   margin-top: 2.5rem;
+  margin-left: 1.5rem;
 }
 section.level4{
   margin-top: 2rem;
+  margin-left: 1.5rem;
 }
 section.level5{
   margin-top: 1.5rem;
+  margin-left: 1.5rem;
 }
 strong {
   font-size: 1.2rem;
