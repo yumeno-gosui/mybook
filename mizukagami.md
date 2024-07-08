@@ -29,6 +29,8 @@ https://maxwellander.itch.io/frame-352
 * このドキュメント
 
 # ゲームプレイ
+<img src="images/play.jpg" width="100%">
+
 ## 実際の遊び方
 本作を遊ぶ手順は、次の通りです。
 
