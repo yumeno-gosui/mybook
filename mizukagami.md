@@ -1,4 +1,5 @@
 # スープの水鏡
+<img src="images/">
 
 I respect-hacked this game after playing Hugeboar games' (@maxwllander) journaling photo RPG "Frame352".
 I greatly admire their creativity. Maximum thanks to @maxwllander.
