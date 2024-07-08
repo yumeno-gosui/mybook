@@ -1,9 +1,9 @@
 module.exports = {
-  title: 'バンジャ君の食べたかったもの',
+  title: 'スープの水鏡',
   author: '午睡キネマ <yumeno.gosui@gmail.com>',
   language: 'ja',
-  theme: 'css/style.css',
+  theme: 'css/style2.css',
   entry: [
-    "26book.md",
+    "mizukagami.md",
   ],
 }
