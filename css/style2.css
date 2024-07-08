@@ -46,7 +46,7 @@ h5 {
   margin: 1.4rem 0 0 0;
   padding-bottom: 0.5rem;
   display: block;
-  border-bottom: solid 2px;
+  border-bottom: solid 1px #bb8815;
 }
 li{
   font-size: 110%;
