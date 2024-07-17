@@ -9,7 +9,7 @@ http://creativecommons.org/licenses/by/4.0/
 このゲームは、@the_gamenomicon(Xアカウント)のSecond Guess System SRDをベースに作成しています。SRDをリリースしてくれたことに心から感謝とリスペクトを！！！
 https://gamenomicon.itch.io/second-guess-system-srd
 
-必要があるようでしたら、TRPG安全ツールキットの参照もご参照ください
+必要がありそうなら、TRPG安全ツールキットをご参照ください
 https://ttrpgsafetytoolkit.com/
 
 ### もしや、この通路を何度も繰り返して歩いているのでは？
