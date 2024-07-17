@@ -4,6 +4,8 @@
 
 >> このルール上での「あなた」は、プレイヤーが演じる「キャラクター」に向けて書かれています。
 
+----
+
 ## はじめに
 ### Powerd By Second Guess System
 Second Guess System by William Lentz is licensed under CC BY 4.0. To view a copy of this license, visit
@@ -12,7 +14,7 @@ http://creativecommons.org/licenses/by/4.0/
 このゲームは、@the_gamenomicon(Xアカウント)のSecond Guess System SRDをベースに作成しています。SRDをリリースしてくれたことに心から感謝とリスペクトを！！！
 https://gamenomicon.itch.io/second-guess-system-srd
 
-必要がありそうなら、TRPG安全ツールキットをご参照ください
+必要がありそうなら、TRPG安全ツールキットをご参照ください。
 https://ttrpgsafetytoolkit.com/
 
 ### もしや、この通路を何度もループしているのでは？
