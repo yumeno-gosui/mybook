@@ -88,7 +88,7 @@ th:first-child,th:nth-child(3){
   width: 16%;
 }
 td{
-  font-size: 10.5pt;
+  font-size: 10.0pt;
   background-color: #f6f0d3;
 }
 .level1 { page-break-before: always; }
