@@ -84,7 +84,7 @@ th,td{
 th{
   background-color: #eee;
 }
-th:first-child,th:nth-child(2),th:last-child{
+th:first-child{
   width: 16%;
 }
 td{
