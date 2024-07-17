@@ -1,9 +1,9 @@
 module.exports = {
-  title: 'スープの水鏡',
+  title: 'エンティティーズへ行こう',
   author: '午睡キネマ <yumeno.gosui@gmail.com>',
   language: 'ja',
-  theme: 'css/style2.css',
+  theme: 'css/style3.css',
   entry: [
-    "mizukagami.md",
+    "entity.md",
   ],
 }
