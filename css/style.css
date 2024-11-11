@@ -45,13 +45,6 @@ h5 {
   font-size: 1.4rem;
   margin: 1.4rem 0 0 0;
 }
-hr.pagebreak{
-  break-before: page;
-  visibility: hidden;
-  margin: 0px;
-  padding: 0px;
-  height: 1px;
-}
 li{
   font-size: 110%;
   line-height: 2.0;
@@ -92,5 +85,11 @@ td{
   background-color: #f6f0d3;
 }
 .level1 { page-break-before: always; }
-
+.pagebreak{
+  break-before: page;
+  visibility: hidden;
+  margin: 0px;
+  padding: 0px;
+  height: 1px;
+}
 @page {}
