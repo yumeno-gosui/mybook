@@ -45,9 +45,12 @@ h5 {
   font-size: 1.4rem;
   margin: 1.4rem 0 0 0;
 }
-.pagebreak{
+hr.pagebreak{
+  break-before: page;
   visibility: hidden;
-  break-after: page;
+  margin: 0px;
+  padding: 0px;
+  height: 1px;
 }
 li{
   font-size: 110%;
