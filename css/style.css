@@ -45,6 +45,10 @@ h5 {
   font-size: 1.4rem;
   margin: 1.4rem 0 0 0;
 }
+.pagebreak{
+  visibility: hidden;
+  break-after: page;
+}
 li{
   font-size: 110%;
   line-height: 2.0;
