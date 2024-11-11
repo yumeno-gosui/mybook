@@ -73,6 +73,7 @@ This work is based on The Hints and Hijinx System, product of Pandion Games ([ht
 
 **[最大値] D12 → D10 → D8 → D6 → D4 → D2(コイン) [最小値]**
 
+---
 
 ## セットアップ
 
