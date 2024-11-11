@@ -86,7 +86,7 @@ td{
 }
 .level1 { page-break-before: always; }
 .pagebreak{
-  break-before: page;
+  page-break-before: always;
   visibility: hidden;
   margin: 0px;
   padding: 0px;
