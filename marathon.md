@@ -5,7 +5,10 @@
 ## クレジット
 This game is Illuminated by LUMEN 2.0, based on the LUMEN2.0 RPG system designed by Spencer Campbell, Gila RPGs. This game is in no way affiliated with Spencer Campbell or Gila RPGs.
 
+This work is based on Firelights, product of Fari RPGs (https://farirpgs.com/), developed and authored by René-Pier Deshaies-Gélinas, and licensed for our use under the Creative Commons Attribution 4.0 License (https://creativecommons.org/licenses/by/4.0/)
+
 Bungie's new version of “marathon” closed alpha test was not available in Japan, so I was so eager to play it that I created a delusion homage to the unreleased game.This has nothing to do with the actual “marathon,” and we have no intention of infringing on any rights.
+
 
 ## 必要なもの
 筆記用具 / 標準トランプデッキ(ジョーカー入り) / このルール
@@ -70,7 +73,7 @@ Bungie's new version of “marathon” closed alpha test was not available in Ja
  * ライバルランナーとの衝突も重要。協力するも裏切るも、物語次第。
 
 プロンプトに沿ったアクションは、プロンプト側でアクション解決の回数が指定される。
-プロンプト生成については、後述する【5.プロンプト】を参照すること。
+プロンプト生成については、後述する【3.プロンプト】を参照すること。
 
 
 ### 2-1.アクション解決
@@ -104,7 +107,7 @@ Bungie's new version of “marathon” closed alpha test was not available in Ja
 * あなたの考えた物語に放っておいて問題はないが目障りな状況を追加する。デバフタグが取り除かれるまで、その問題は継続する。
 * このタグを取得した際、任意の属性1つを選択する。メモには＃若干の問題（属性名）と記録する。
 * このタグがついた属性をアクション解決で使用して成功になった場合、部分的成功へ格下げされる。
-* 日記を書くことで、このデバフタグを1つだけ取り除ける。
+* 日記を書くことで、このデバフタグを1つだけ取り除ける。後述する【3.プロンプト】を参照すること。
 
 ##### 2-1-3-2.＃大きな問題
 このタグはデバフタグになり、以下のような効果を発生させる。
@@ -112,7 +115,7 @@ Bungie's new version of “marathon” closed alpha test was not available in Ja
 * あなたの考えた物語にかなり深刻な問題や状況を追加する。デバフタグが取り除かれるまで、その問題は継続する。
 * このタグを取得した際、任意の属性1つを選択する。メモには＃大きな問題（属性名）と記録する。
 * このタグがついた属性をアクション解決で使用して成功になった場合、消極的成功へ格下げされる。
-* 日記を書くことで、このデバフタグを1つだけ取り除ける。
+* 日記を書くことで、このデバフタグを1つだけ取り除ける。後述する【3.プロンプト】を参照すること。
 
 
 プロンプトで指定された回数のアクション解決を行った後、アクション解決に使用してない属性を1点か** 成功 **分の［ヒート］を取得する。
