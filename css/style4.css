@@ -13,16 +13,19 @@
 }
 
 body {
-  font-family: 'Georgia', 'Times New Roman', serif; /* 読みやすいセリフ体 */
-  font-size: 12pt; /* 標準的な本文サイズ */
+  font-family: 'Georgia', 'Times New Roman', 'Noto Serif', serif; /* 読みやすいセリフ体 */
+  font-size: 11pt; /* 標準的な本文サイズ */
   line-height: 1.5; /* 行間を広めに設定して読みやすく */
-  color: #222; /* 濃いめのグレーで目に優しく */
+  color: #111; /* 濃いめのグレーで目に優しく */
   text-align: justify; /* 両端揃えでプロフェッショナルな見た目 */
 }
 
 h1, h2, h3, h4 {
   font-family: 'Helvetica', 'Arial', sans-serif; /* 見出しはサンセリフ体でモダンに */
   color: #1a1a1a;
+  margin: 2em 0 0.5em 0;
+  font-weight: bold;
+  page-break-after: avoid;
   break-before: auto; /* 見出しがページの途中で始まることを許可 */
 }
 
@@ -30,6 +33,7 @@ h1 {
   font-size: 24pt; /* 章タイトル */
   margin-top: 30mm;
   margin-bottom: 15mm;
+  padding-bottom: 0.2em;
   string-set: chapter-title content(); /* ヘッダーに章タイトルを反映 */
 }
 
