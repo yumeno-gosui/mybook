@@ -220,3 +220,7 @@ code, pre {
   padding: 0.2em 0.4em;
   border-radius: 3px;
 }
+
+.level3,.level4,.level5{
+  margin-left: 1.0em;
+}
