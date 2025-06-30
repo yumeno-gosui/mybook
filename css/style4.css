@@ -1,6 +1,7 @@
 @page {
   size: A4; /* 210mm × 297mm */
   margin: 20mm 25mm; /* 上下20mm、左右25mm */
+  background-color: #e8ebef;
   @top-center {
     content: string(chapter-title); /* ヘッダーに章タイトルを表示 */
     font-size: 10pt;
@@ -21,7 +22,7 @@ body {
   background-color: #e8ebef;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4 , h5 {
   font-family: 'Helvetica', 'Arial', sans-serif; /* 見出しはサンセリフ体でモダンに */
   color: #666;
   margin: 2em 0 0.5em 0;
@@ -89,7 +90,7 @@ p {
 table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 9pt; /* 表は本文よりやや小さめ */
+  font-size: 8pt; /* 表は本文よりやや小さめ */
   margin: 1em 0;
 }
 
@@ -110,7 +111,7 @@ th {
 }
 
 table caption {
-  font-size: 10pt;
+  font-size: 9pt;
   font-style: italic;
   margin-bottom: 5mm;
   text-align: left;
@@ -141,7 +142,7 @@ table, figure {
 
 ul, ol {
   margin: 10mm 0;
-  padding-left: 10mm;
+  padding-left: 5mm;
 }
 
 li {
