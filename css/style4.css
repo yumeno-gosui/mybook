@@ -65,9 +65,13 @@ table {
   font-size: 9.0pt;
 }
 
+thead {
+  background-color: #f2f2f2;
+}
+
 th, td {
   border: 1px solid #ccc; /* 薄いグレーで枠線 */
-  padding: 5mm;
+  padding: 0.4em 0.6em;
   text-align: left;
 }
 
