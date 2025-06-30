@@ -1,9 +1,9 @@
 module.exports = {
-  title: 'エンティティーズへ行こう',
+  title: 'エンドレスラン',
   author: '午睡キネマ <yumeno.gosui@gmail.com>',
   language: 'ja',
-  theme: 'css/style3.css',
+  theme: 'css/style4.css',
   entry: [
-    "entity.md",
+    "marathon.md",
   ],
 }
