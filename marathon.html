@@ -171,6 +171,7 @@
           <p>
             固有能力やアビリティを能力値の代わりに消費することで、判定を代用することがきる。
             固有能力を使用した場合、判定成功と共にタグ（アイテムや有利な状況）を1つ得られる。
+            ※ 検討案件（イージー以外）：プロンプトに伴うアクション解決で使用しなかった属性を+1するか、成功の数だけ［ヒート］を得る
           </p>
           <section class="level4" aria-labelledby="2-1-1固有能力">
             <h4 id="2-1-1固有能力">2-1-1.固有能力</h4>
@@ -346,6 +347,85 @@
               </tbody>
             </table>
           </section>
+          <section class="level4" aria-labelledby="3-2-1-1ランクによるロケーション特性1枚目オプション">
+            <h4 id="3-2-1-1ランクによるロケーション特性1枚目オプション">3-2-1-1.ランクによるロケーション特性(1枚目：オプション)</h4>
+            <table>
+              <thead>
+                <tr>
+                  <th align="center">ランク</th>
+                  <th align="left">ロケーションの性質</th>
+                  <th align="left">説明</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="center">A</td>
+                  <td align="left">中枢・始源的な場所</td>
+                  <td align="left">そのジャンルの核。古い制御施設、起源にまつわる場所、現在でも機能している場合が多い。</td>
+                </tr>
+                <tr>
+                  <td align="center">2</td>
+                  <td align="left">忘れ去られた遺構</td>
+                  <td align="left">役目を終えた空間。埃にまみれ、しかし時に重要な手がかりが残される。</td>
+                </tr>
+                <tr>
+                  <td align="center">3</td>
+                  <td align="left">一見安全だが不安定</td>
+                  <td align="left">落ち着いて見えるが、罠や伏兵、誤作動の危険がある。</td>
+                </tr>
+                <tr>
+                  <td align="center">4</td>
+                  <td align="left">複雑に入り組んだ構造</td>
+                  <td align="left">シャフト、裏道、分岐だらけ。潜入や逃走に向いているが、迷う可能性も。</td>
+                </tr>
+                <tr>
+                  <td align="center">5</td>
+                  <td align="left">稼働中の施設</td>
+                  <td align="left">部分的に今も使われており、NPCやAIが出入りしている。交渉や潜伏が可能。</td>
+                </tr>
+                <tr>
+                  <td align="center">6</td>
+                  <td align="left">隠された仕掛けがある</td>
+                  <td align="left">通常の利用とは別に、秘密の機能・ルート・情報が存在。調査に最適。</td>
+                </tr>
+                <tr>
+                  <td align="center">7</td>
+                  <td align="left">遮蔽物と視界制限</td>
+                  <td align="left">視覚的な不利や待ち伏せの温床。アクションが緊張感を伴う。</td>
+                </tr>
+                <tr>
+                  <td align="center">8</td>
+                  <td align="left">電力や情報が交錯する場</td>
+                  <td align="left">エネルギーやデータが流れ込み、過負荷・暴走・情報の断片が発生している。</td>
+                </tr>
+                <tr>
+                  <td align="center">9</td>
+                  <td align="left">汚染・危険地帯</td>
+                  <td align="left">化学・バイオ・放射線などの影響がある。通過にリスクが伴う。</td>
+                </tr>
+                <tr>
+                  <td align="center">10</td>
+                  <td align="left">移動する構造物</td>
+                  <td align="left">動く歩道、浮遊施設、エレベーター群など。時間制限や速度がアクションに影響。</td>
+                </tr>
+                <tr>
+                  <td align="center">J</td>
+                  <td align="left">異常な機能をもつ場所</td>
+                  <td align="left">バグった設備、暴走AI、人格をもった施設など、常識外れの挙動が特徴。</td>
+                </tr>
+                <tr>
+                  <td align="center">Q</td>
+                  <td align="left">自律的意志をもつシステム</td>
+                  <td align="left">施設が人格的に振る舞う。AIや精神ネットワークが関与し、交渉や説得も可能。</td>
+                </tr>
+                <tr>
+                  <td align="center">K</td>
+                  <td align="left">象徴的な最深部・終着点</td>
+                  <td align="left">そのジャンルの頂点的ロケーション。ドラマの山場や対決に適している。</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
           <section class="level4" aria-labelledby="3-2-2ランクによるイベントのスケール2枚目">
             <h4 id="3-2-2ランクによるイベントのスケール2枚目">3-2-2.ランクによるイベントのスケール(2枚目)</h4>
             <table>
@@ -383,6 +463,8 @@
                   <th align="center">ランク</th>
                   <th align="left">キーワード</th>
                   <th align="left">プロンプト例（スートに応じて変化）</th>
+                  <th align="left"></th>
+                  <th align="left"></th>
                 </tr>
               </thead>
               <tbody>
@@ -390,72 +472,98 @@
                   <td align="center">A</td>
                   <td align="left">特異点／極限状況</td>
                   <td align="left">「すべてが限界を超える。君はこの状況を突破できるか？」</td>
+                  <td align="left"></td>
+                  <td align="left"></td>
                 </tr>
                 <tr>
                   <td align="center">2</td>
                   <td align="left">小さな兆し／違和感</td>
                   <td align="left">「一見取るに足らない異変が、君の警戒心を刺激する」</td>
+                  <td align="left"></td>
+                  <td align="left"></td>
                 </tr>
                 <tr>
                   <td align="center">3</td>
                   <td align="left">選択肢／分岐</td>
                   <td align="left">「どちらの道を選ぶ？それぞれに明確なリスクと報酬がある」</td>
+                  <td align="left"></td>
+                  <td align="left"></td>
                 </tr>
                 <tr>
                   <td align="center">4</td>
                   <td align="left">隠された情報／秘密</td>
                   <td align="left">「壁の裏に奇妙なマーク。これは誰の仕業だ？」</td>
+                  <td align="left"></td>
+                  <td align="left"></td>
                 </tr>
                 <tr>
                   <td align="center">5</td>
                   <td align="left">小競り合い／揺らぎ</td>
                   <td align="left">「予定調和が崩れ始める。わずかな動きが火種となる」</td>
+                  <td align="left"></td>
+                  <td align="left"></td>
                 </tr>
                 <tr>
                   <td align="center">6</td>
                   <td align="left">連鎖反応／混乱</td>
                   <td align="left">「一つの選択が都市構造そのものに波紋を広げる」</td>
+                  <td align="left"></td>
+                  <td align="left"></td>
                 </tr>
                 <tr>
                   <td align="center">7</td>
                   <td align="left">試練／突破</td>
                   <td align="left">「何かを乗り越えねばならない。肉体か、精神か、信念か」</td>
+                  <td align="left"></td>
+                  <td align="left"></td>
                 </tr>
                 <tr>
                   <td align="center">8</td>
                   <td align="left">狂気／矛盾</td>
                   <td align="left">「周囲の言葉が意味を失う。現実にバグがあるとすれば、それはどこだ？」</td>
+                  <td align="left"></td>
+                  <td align="left"></td>
                 </tr>
                 <tr>
                   <td align="center">9</td>
                   <td align="left">裏切り／代償</td>
                   <td align="left">「すべてを賭けて信じた者に裏切られること。それでも進むか？」</td>
+                  <td align="left"></td>
+                  <td align="left"></td>
                 </tr>
                 <tr>
                   <td align="center">10</td>
                   <td align="left">変化／反転</td>
                   <td align="left">「今まで信じていたものが反転する。敵が味方に、味方が敵に？」</td>
+                  <td align="left"></td>
+                  <td align="left"></td>
                 </tr>
                 <tr>
                   <td align="center">J</td>
                   <td align="left">奇襲／戦術</td>
                   <td align="left">「敵はただの力任せではない。君を“読み”に来ている」</td>
+                  <td align="left"></td>
+                  <td align="left"></td>
                 </tr>
                 <tr>
                   <td align="center">Q</td>
                   <td align="left">人間関係／情動</td>
                   <td align="left">「何よりも強いのは“感情”だ。それが走る理由になる」</td>
+                  <td align="left"></td>
+                  <td align="left"></td>
                 </tr>
                 <tr>
                   <td align="center">K</td>
                   <td align="left">謎／決断</td>
                   <td align="left">「なんだ、これは？ こんなことのために人が消失したのか？」</td>
+                  <td align="left"></td>
+                  <td align="left"></td>
                 </tr>
               </tbody>
             </table>
             <p>
               プロンプトの情報量を増やすために、キーワードを参照したカードを利用して、以下のイベント/ロケーション表を参照しても良い。
-              全部を盛り込んでも良いし、1部だけ利用しても良い。もしくは、そこから自分で発展させても良い。
+              全部を盛り込んでも良いし、1部だけ利用したり、そこから自分の思い描いている物語に合わせて調整しても良い。
             </p>
           </section>
           <section class="level4" aria-labelledby="3-2-4-イベント--ロケーション表">
@@ -673,28 +781,6 @@
                   </tr>
                 </tbody>
               </table>
-              <p>
-                ChatGPT:
-                了解しました。以下に、ランク（A〜K）ごとに共通して適用できるロケーションの“構造・性質・目的”のテンプレートを提示します。
-                スート（♠クラブ・♣スペード・♦ダイヤ・♥ハート）は<strong>ロケーションのジャンル（軍事・工業・商業・居住など）を定め、ランクはそのロケーションの「機能的・物語的な特性」</strong>を決定します。
-              </p>
-              <p>
-                🃏『エンドレス・ラン』ロケーション構造テンプレート（ランク別）
-                ランク 特徴（ロケーションの性質） 説明
-                A（エース） 中枢・始源的な場所 そのジャンルの核。古い制御施設、起源にまつわる場所、現在でも機能している場合が多い。
-                2 忘れ去られた遺構 役目を終えた空間。埃にまみれ、しかし時に重要な手がかりが残される。
-                3 一見安全だが不安定 落ち着いて見えるが、罠や伏兵、誤作動の危険がある。
-                4 複雑に入り組んだ構造 シャフト、裏道、分岐だらけ。潜入や逃走に向いているが、迷う可能性も。
-                5 稼働中の施設 部分的に今も使われており、NPCやAIが出入りしている。交渉や潜伏が可能。
-                6 隠された仕掛けがある 通常の利用とは別に、秘密の機能・ルート・情報が存在。調査に最適。
-                7 遮蔽物と視界制限 視覚的な不利や待ち伏せの温床。アクションが緊張感を伴う。
-                8 電力や情報が交錯する場 エネルギーやデータが流れ込み、過負荷・暴走・情報の断片が発生している。
-                9 汚染・危険地帯 化学・バイオ・放射線などの影響がある。通過にリスクが伴う。
-                10 移動する構造物 動く歩道、浮遊施設、エレベーター群など。時間制限や速度がアクションに影響。
-                J（ジャック） 異常な機能をもつ場所 バグった設備、暴走AI、人格をもった施設など、常識外れの挙動が特徴。
-                Q（クイーン） 自律的意志をもつシステム 施設が人格的に振る舞う。AIや精神ネットワークが関与し、交渉や説得も可能。
-                K（キング） 象徴的な最深部・終着点 そのジャンルの頂点的ロケーション。ドラマの山場や対決に適している。
-              </p>
             </section>
             <section class="level5" aria-labelledby="3-2-4-3-ダイヤチャンスギア補給-商業文化エリア">
               <h5 id="3-2-4-3-ダイヤチャンスギア補給-商業文化エリア">3-2-4-3. ♦ダイヤ（チャンス／ギア／補給）/ （商業・文化エリア）</h5>
@@ -890,36 +976,31 @@
                     <td align="center">J</td>
                     <td align="left">戦術転換</td>
                     <td align="left">「戦況が変わる。敵が撤退を始めた……だがそれは罠か？ 追うか？」</td>
-                    <td align="left"></td>
-                    <td align="left"></td>
+                    <td align="left">高所整備用ドローンポート</td>
+                    <td align="left">自動整備機が突如起動。あなたを機材と誤認する。</td>
                   </tr>
                   <tr>
                     <td align="center">Q</td>
                     <td align="left">同盟</td>
                     <td align="left">「敵と思っていた相手が、君に武器を投げ渡してきた。“一時的な共闘だ”」</td>
-                    <td align="left"></td>
-                    <td align="left"></td>
+                    <td align="left">製造AI管制室</td>
+                    <td align="left">モノづくりを最適化するが、目的のために安全性を無視する。</td>
                   </tr>
                   <tr>
                     <td align="center">K</td>
                     <td align="left">決闘</td>
                     <td align="left">「進むには、この強敵を倒すしかない──お前 vs あいつ、勝者だけが先に行ける」</td>
-                    <td align="left"></td>
-                    <td align="left"></td>
+                    <td align="left">重工メガファクトリー</td>
+                    <td align="left">自走式クレーンやレーザーカッターが無人で稼働中。</td>
                   </tr>
                 </tbody>
               </table>
-              <p>
-                J 高所整備用ドローンポート 自動整備機が突如起動。プレイヤーを機材と誤認する。
-                Q 製造AI管制室 モノづくりを最適化するが、目的のために命も削る。
-                K 重工メガファクトリー 自走式クレーンやレーザーカッターが無人で稼働中。
-              </p>
             </section>
           </section>
         </section>
       </section>
-      <section class="level2" aria-labelledby="3ジャーナリング">
-        <h2 id="3ジャーナリング">3.ジャーナリング</h2>
+      <section class="level2" aria-labelledby="4ジャーナリング">
+        <h2 id="4ジャーナリング">4.ジャーナリング</h2>
         <p>本作において、日記を書くことは非常に重要である。「意識転送者（ランナー）」をバイオシンセティック・シェルに転送する技術が確立されたデメリットとして、意識の連続性と記憶の整合性に重大な欠陥を抱えている。意識が転送されるたびに記憶データは断片化し、統制AIやハッカーの介入によって記憶データが改竄される危険系も高まった。今回は”前情報”があらかじめインプットされているために、データ容量の空きがさらに空くなっている。</p>
         <p>
           ランナーは誰しも、外部的かつ非デジタルな手段で、個人のアイデンティティや経験を保持する必要があると考えた。
@@ -927,27 +1008,37 @@
         </p>
         <section class="level3" aria-labelledby="3-1日記を書くタイミング">
           <h3 id="3-1日記を書くタイミング">3-1.日記を書くタイミング</h3>
-          <p>ゲーム的な効果は以下の通り</p>
+          <p>ランナーが日記を書くタイミングは2種類ある。</p>
           <ul>
-            <li>日記1回分を捨てて記憶を失う代わりに、アビリティを獲得する。</li>
-            <li>日記1回分を捨てて記憶を失う代わりに、アビリティを利用する消費ヒートを0にする。</li>
-            <li>日記1回分を捨てて記憶を失う代わりに、減少した属性1つを全回復させる。</li>
-            <li>他人の日記に残された記憶を自分の体験にすることができる</li>
-            <li>ゴールにたどり着く前にキャラクターがデスした(属性がすべて0になった)場合、日記を書いた場所にリスポーンできる。</li>
+            <li>［ヒート］が0になった</li>
+            <li>ストーリーデッキからカードが引けなくなった</li>
+          </ul>
+          <p>日記を書く際は、マップの上に書いた場所をマーカーとして残すこと。また、1回書くことで、以下の中から1つ効果が発動する。</p>
+          <ul>
+            <li>［ヒート］を初期値に戻し、＃若干の問題タグか＃大きな問題タグを1つ取り除く</li>
+            <li>ストーリーデッキに捨て札を戻してシャッフルし、＃若干の問題タグか＃大きな問題タグを1つ取り除く</li>
+          </ul>
+          <p>書いた日記には、1回分を破棄する度に以下の効果のうち1つを発揮する。</p>
+          <ul>
+            <li>プロンプト生成の際、引いた3枚のカードを好きな順番で利用できる</li>
+            <li>アクション解決で使用する固有能力の消費ヒートを0にする</li>
+            <li>0になった属性を初期値に戻す</li>
+            <li>すべての属性が0だった場合、即座にリスポーンする</li>
           </ul>
         </section>
       </section>
-      <section class="level2" aria-labelledby="4勝利条件">
-        <h2 id="4勝利条件">4.勝利条件</h2>
-        <p>以下のいずれかを達成することで《エンドレス・ラン》を制する：</p>
-        <ul>
-          <li>ゴールに到達し、都市の外へ脱出する</li>
-          <li>ライバルたちを出し抜き、自身の存在を都市に刻む</li>
-          <li>レース中に明かされるエクソダス・ホワイトやDIS City XIの真実を知り、深淵を覗く意味を得る</li>
-        </ul>
+      <section class="level2" aria-labelledby="4終了条件">
+        <h2 id="4終了条件">4.終了条件</h2>
         <p>
-          エンドレス・ランに勝者はいないと言われてきた。
-          だが、君がその常識を覆すのなら──走り出す価値はある。
+          《エンドレス・ラン》を終わらせるには、一定数の［手札］を保持した状態で配置されたゴールにマーカーが移動させる必要がある。
+          そうすれば、あなたは無事に帰りのチケットを得て次回のランにも参加できるだろう。
+          しかし、あなたとして参加するためには日記が1つでも手元に残っている必要もある。
+        </p>
+        <p>
+          もし、ゴールに到達しても日記が手元に何も残っていなかったり、すべての属性が0でリスポーンせずにランを終わらせた場合は次回ランは新しいあなたで挑むことになるだろう。
+          もしかしたら、レース中に明かされるエクソダス・ホワイトやDIS City XIの真実を知って怖気ついた可能性もある。
+          だが、常識を覆す可能性を秘めているのは……いつだってあなたなのだ。
+          走り出す価値は、きっとあるある。
         </p>
       </section>
     </section>
