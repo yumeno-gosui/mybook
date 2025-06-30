@@ -88,7 +88,7 @@ table caption {
 }
 
 /* 表がページをまたぐ場合の処理 */
-table {
+table, figure {
   break-inside: avoid; /* 表がページをまたがないように */
 }
 
@@ -167,4 +167,12 @@ a.cross-ref:hover {
 
 .index dd {
   margin-bottom: 5mm;
+}
+
+code, pre {
+  font-family: 'Courier New', monospace;
+  font-size: 10pt;
+  background-color: #f8f8f8;
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
 }
