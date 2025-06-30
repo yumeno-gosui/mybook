@@ -18,7 +18,7 @@
       </section>
       <section class="level2" aria-labelledby="必要なもの">
         <h2 id="必要なもの">必要なもの</h2>
-        <p>筆記用具 / 標準トランプデッキ(ジョーカー入り) / このルール</p>
+        <p>筆記用具 / 標準トランプデッキ(ジョーカー入り) / マーカーやトークンを数個 / このルール</p>
       </section>
       <section class="level2" aria-labelledby="イントロダクション">
         <h2 id="イントロダクション">イントロダクション</h2>
@@ -226,7 +226,7 @@
               <li>それ以外：現在地の左右どちらか。</li>
             </ul>
           </li>
-          <li>必要に応じてアクション解決を行う。シナリオとアクション解決の結果をメモして、カードの上に置く。</li>
+          <li>必要に応じてアクション解決を行う。シナリオとアクション解決の結果をメモしてカードの上に置き、あなたを表すマーカー（もしくはトークン）を移動させてくる。</li>
           <li>残った2枚のカードは、捨て札にする。</li>
           <li>ストーリーデッキからカードが引けなくなったら、後述する【ジャーナリング】を参照すること。配置したカードが絵札だった場合は、【発見】を行う。</li>
         </ol>
@@ -242,14 +242,14 @@
               <tr>
                 <th align="left">物語の長さ</th>
                 <th align="center">カード枚数</th>
-                <th align="left">シナリオ感</th>
+                <th align="left">シナリオ感の例</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td align="left">イージー</td>
-                <td align="center">10枚<br>+絵札3枚</td>
-                <td align="left">序盤チュートリアル感／選択肢が多め／敵もやや手ぬるい</td>
+                <td align="center">10枚<br>+絵札3枚+任意でジョーカー1枚</td>
+                <td align="left">序盤チュートリアル感／選択肢少なめ／敵もやや手ぬるい</td>
               </tr>
               <tr>
                 <td align="left">ノーマル</td>
@@ -273,13 +273,19 @@
             絵札は絵札のデッキの上から、ジョーカーはジョーカーのデッキの上から引いて、それを1つのデッキとしてまとめ上げる。
             最後にゴール地点を加えてデッキをシャッフルをすると、ストーリーデッキは完成する。
           </p>
-          <section class="level4" aria-labelledby="絵札">
-            <h4 id="絵札">絵札</h4>
+          <section class="level4" aria-labelledby="3-1-1絵札">
+            <h4 id="3-1-1絵札">3-1-1.絵札</h4>
             <p>本作での絵札は、シナリオの内容を決定するプロンプト以外にも“JとQ”は『エンドレス・ラン』中に企業が回収を希望している物資、“K”はエクソダス・ホワイトやDIS City XIに関係する謎が隠されている可能性を示している。</p>
-            <p>絵札を配置した後、ストーリーデッキからカードを引かずに隠されているものを発見するアクション解決を行う。判定値が2以上だったら次のストーリーデッキからのドローは、発見した謎や秘密に関するプロンプトとなる。それ以外では、「危険度MAXのボスイベント」として扱う。</p>
+            <section class="level5" aria-labelledby="3-1-1-1発見">
+              <h5 id="3-1-1-1発見">3-1-1-1.発見</h5>
+              <p>
+                あなたを表すマーカー（もしくはトークン）が絵札の上に移動してきた、次のプロンプトを使って行うアクション解決は“発見”として扱われる。
+                プロンプトを生成する手順に変更はないが、「キーワード」を参照したカードをマップ用として配置せずに［手札］として保持する。
+              </p>
+            </section>
           </section>
-          <section class="level4" aria-labelledby="ジョーカー">
-            <h4 id="ジョーカー">ジョーカー</h4>
+          <section class="level4" aria-labelledby="3-1-2ジョーカー">
+            <h4 id="3-1-2ジョーカー">3-1-2.ジョーカー</h4>
             <p>本作でのジョーカーは、物語にかなりの混乱と転換点を与えることになる。</p>
             <table>
               <thead>
@@ -298,168 +304,275 @@
                 <tr>
                   <td align="left">黒</td>
                   <td align="center">リセット</td>
-                  <td align="left">プレイヤーの記憶が消える、位置が巻き戻るなど、過去の選択が無意味になるがヒントが浮かび上がる。デッキの下からドローをする</td>
+                  <td align="left">プレイヤーの記憶が消える、位置が巻き戻るなど、過去の選択が無意味になるがヒントが浮かび上がる。ゲーム中、ストーリーデッキの下からカードを引くことになる</td>
                 </tr>
               </tbody>
             </table>
           </section>
-          <section class="level4" aria-labelledby="シナリオプロンプト">
-            <h4 id="シナリオプロンプト">シナリオプロンプト</h4>
+        </section>
+        <section class="level3" aria-labelledby="3-2プロンプト生成表">
+          <h3 id="3-2プロンプト生成表">3-2.プロンプト生成表</h3>
+          <section class="level4" aria-labelledby="3-2-1スートによるシーンカテゴリ分け1枚目">
+            <h4 id="3-2-1スートによるシーンカテゴリ分け1枚目">3-2-1.スートによるシーンカテゴリ分け(1枚目)</h4>
+            <table>
+              <thead>
+                <tr>
+                  <th align="center">スート</th>
+                  <th align="left">シーンのテーマ</th>
+                  <th align="left">内容の一例</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="center">♠ スペード</td>
+                  <td align="left">障害／トラップ</td>
+                  <td align="left">落下する道路、敵ドローンの襲撃、崩壊するビル</td>
+                </tr>
+                <tr>
+                  <td align="center">♥ ハート</td>
+                  <td align="left">ドラマ／選択</td>
+                  <td align="left">過去の記憶、裏切り者との再会、信頼or裏切りの選択</td>
+                </tr>
+                <tr>
+                  <td align="center">♦ ダイヤ</td>
+                  <td align="left">ギア／チャンス</td>
+                  <td align="left">高性能ギアの入手、エネルギーチャージ、隠しルート</td>
+                </tr>
+                <tr>
+                  <td align="center">♣ クラブ</td>
+                  <td align="left">戦闘／競争</td>
+                  <td align="left">ライバルとのスプリント、追跡AIとのバトル、肉弾戦</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+          <section class="level4" aria-labelledby="3-2-2ランクによるイベントのスケール2枚目">
+            <h4 id="3-2-2ランクによるイベントのスケール2枚目">3-2-2.ランクによるイベントのスケール(2枚目)</h4>
+            <table>
+              <thead>
+                <tr>
+                  <th align="center">ランク</th>
+                  <th align="left">イベントの強度・複雑さ</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="center">A</td>
+                  <td align="left">危険度MAXのボスイベント／特別な選択肢が提示される</td>
+                </tr>
+                <tr>
+                  <td align="center">2～5</td>
+                  <td align="left">小規模。軽めの試練、ワンアクションで解決可能</td>
+                </tr>
+                <tr>
+                  <td align="center">6～9</td>
+                  <td align="left">中規模イベント。選択肢があり、状況が変化する</td>
+                </tr>
+                <tr>
+                  <td align="center">10～K</td>
+                  <td align="left">大規模な危機、長引く戦闘や連続イベントへ</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+          <section class="level4" aria-labelledby="3-2-3ランクによるキーワード一覧3枚目">
+            <h4 id="3-2-3ランクによるキーワード一覧3枚目">3-2-3.ランクによるキーワード一覧（3枚目）</h4>
+            <table>
+              <thead>
+                <tr>
+                  <th align="center">ランク</th>
+                  <th align="left">キーワード</th>
+                  <th align="left">プロンプト例（スートに応じて変化）</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="center">A</td>
+                  <td align="left">特異点／極限状況</td>
+                  <td align="left">「すべてが限界を超える。君はこの状況を突破できるか？」</td>
+                </tr>
+                <tr>
+                  <td align="center">2</td>
+                  <td align="left">小さな兆し／違和感</td>
+                  <td align="left">「一見取るに足らない異変が、君の警戒心を刺激する」</td>
+                </tr>
+                <tr>
+                  <td align="center">3</td>
+                  <td align="left">選択肢／分岐</td>
+                  <td align="left">「どちらの道を選ぶ？それぞれに明確なリスクと報酬がある」</td>
+                </tr>
+                <tr>
+                  <td align="center">4</td>
+                  <td align="left">隠された情報／秘密</td>
+                  <td align="left">「壁の裏に奇妙なマーク。これは誰の仕業だ？」</td>
+                </tr>
+                <tr>
+                  <td align="center">5</td>
+                  <td align="left">小競り合い／揺らぎ</td>
+                  <td align="left">「予定調和が崩れ始める。わずかな動きが火種となる」</td>
+                </tr>
+                <tr>
+                  <td align="center">6</td>
+                  <td align="left">連鎖反応／混乱</td>
+                  <td align="left">「一つの選択が都市構造そのものに波紋を広げる」</td>
+                </tr>
+                <tr>
+                  <td align="center">7</td>
+                  <td align="left">試練／突破</td>
+                  <td align="left">「何かを乗り越えねばならない。肉体か、精神か、信念か」</td>
+                </tr>
+                <tr>
+                  <td align="center">8</td>
+                  <td align="left">狂気／矛盾</td>
+                  <td align="left">「周囲の言葉が意味を失う。現実にバグがあるとすれば、それはどこだ？」</td>
+                </tr>
+                <tr>
+                  <td align="center">9</td>
+                  <td align="left">裏切り／代償</td>
+                  <td align="left">「すべてを賭けて信じた者に裏切られること。それでも進むか？」</td>
+                </tr>
+                <tr>
+                  <td align="center">10</td>
+                  <td align="left">変化／反転</td>
+                  <td align="left">「今まで信じていたものが反転する。敵が味方に、味方が敵に？」</td>
+                </tr>
+                <tr>
+                  <td align="center">J</td>
+                  <td align="left">奇襲／戦術</td>
+                  <td align="left">「敵はただの力任せではない。君を“読み”に来ている」</td>
+                </tr>
+                <tr>
+                  <td align="center">Q</td>
+                  <td align="left">人間関係／情動</td>
+                  <td align="left">「何よりも強いのは“感情”だ。それが走る理由になる」</td>
+                </tr>
+                <tr>
+                  <td align="center">K</td>
+                  <td align="left">謎／決断</td>
+                  <td align="left">「なんだ、これは？ こんなことのために人が消失したのか？」</td>
+                </tr>
+              </tbody>
+            </table>
             <p>
-              ストーリーデッキから3枚のカードを引いて、シナリオの内容を決定する。マップとして置くことになるのは、引いた3枚目のカードを利用する。
-              配置しなかったカードは山札に戻して、デッキをシャッフルする
+              プロンプトの情報量を増やすために、キーワードを参照したカードを利用して、以下のイベント/ロケーション表を参照しても良い。
+              全部を盛り込んでも良いし、1部だけ利用しても良い。もしくは、そこから自分で発展させても良い。
             </p>
-            <section class="level5" aria-labelledby="スートによるシーンカテゴリ分け1枚目">
-              <h5 id="スートによるシーンカテゴリ分け1枚目">スートによるシーンカテゴリ分け(1枚目)</h5>
-              <table>
-                <thead>
-                  <tr>
-                    <th align="center">スート</th>
-                    <th align="left">シーンのテーマ</th>
-                    <th align="left">内容の一例</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td align="center">♠ スペード</td>
-                    <td align="left">障害／トラップ</td>
-                    <td align="left">落下する道路、敵ドローンの襲撃、崩壊するビル</td>
-                  </tr>
-                  <tr>
-                    <td align="center">♥ ハート</td>
-                    <td align="left">ドラマ／選択</td>
-                    <td align="left">過去の記憶、裏切り者との再会、信頼or裏切りの選択</td>
-                  </tr>
-                  <tr>
-                    <td align="center">♦ ダイヤ</td>
-                    <td align="left">ギア／チャンス</td>
-                    <td align="left">高性能ギアの入手、エネルギーチャージ、隠しルート</td>
-                  </tr>
-                  <tr>
-                    <td align="center">♣ クラブ</td>
-                    <td align="left">戦闘／競争</td>
-                    <td align="left">ライバルとのスプリント、追跡AIとのバトル、肉弾戦</td>
-                  </tr>
-                </tbody>
-              </table>
-            </section>
-            <section class="level5" aria-labelledby="ランクによるイベントのスケール2枚目">
-              <h5 id="ランクによるイベントのスケール2枚目">ランクによるイベントのスケール(2枚目)</h5>
+          </section>
+          <section class="level4" aria-labelledby="3-2-4-イベント--ロケーション表">
+            <h4 id="3-2-4-イベント--ロケーション表">3-2-4. イベント / ロケーション表</h4>
+            <section class="level5" aria-labelledby="3-2-4-1-スペード障害トラップ">
+              <h5 id="3-2-4-1-スペード障害トラップ">3-2-4-1. ♠スペード（障害／トラップ）</h5>
               <table>
                 <thead>
                   <tr>
                     <th align="center">ランク</th>
-                    <th align="left">イベントの強度・複雑さ</th>
+                    <th align="left">イベント<br>キーワード</th>
+                    <th align="left">プロンプト例</th>
+                    <th align="left">ロケーション<br>キーワード</th>
+                    <th align="left">プロンプト例</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <td align="center">A</td>
-                    <td align="left">危険度MAXのボスイベント／特別な選択肢が提示される</td>
-                  </tr>
-                  <tr>
-                    <td align="center">2～5</td>
-                    <td align="left">小規模。軽めの試練、ワンアクションで解決可能</td>
-                  </tr>
-                  <tr>
-                    <td align="center">6～9</td>
-                    <td align="left">中規模イベント。選択肢があり、状況が変化する</td>
-                  </tr>
-                  <tr>
-                    <td align="center">10～K</td>
-                    <td align="left">大規模な危機、長引く戦闘や連続イベントへ</td>
-                  </tr>
-                </tbody>
-              </table>
-            </section>
-            <section class="level5" aria-labelledby="ランクによるキーワード一覧3枚目">
-              <h5 id="ランクによるキーワード一覧3枚目">ランクによるキーワード一覧（3枚目）</h5>
-              <table>
-                <thead>
-                  <tr>
-                    <th align="center">ランク</th>
-                    <th align="left">キーワード</th>
-                    <th align="left">プロンプト例（スートに応じて変化）</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td align="center">A</td>
-                    <td align="left">特異点／極限状況</td>
-                    <td align="left">「すべてが限界を超える。君はこの状況を突破できるか？」</td>
+                    <td align="left">終末構造</td>
+                    <td align="left">「都市構造そのものが崩壊し始めている。瓦礫が降り注ぎ、空間が歪む。この空間を生き延びる術は？」</td>
+                    <td align="left"></td>
+                    <td align="left"></td>
                   </tr>
                   <tr>
                     <td align="center">2</td>
-                    <td align="left">小さな兆し／違和感</td>
-                    <td align="left">「一見取るに足らない異変が、君の警戒心を刺激する」</td>
+                    <td align="left">ヒビ</td>
+                    <td align="left">「地面に入ったわずかなひび。だが、その下には何かが潜んでいる気がする……」</td>
+                    <td align="left"></td>
+                    <td align="left"></td>
                   </tr>
                   <tr>
                     <td align="center">3</td>
-                    <td align="left">選択肢／分岐</td>
-                    <td align="left">「どちらの道を選ぶ？それぞれに明確なリスクと報酬がある」</td>
+                    <td align="left">誘導障害</td>
+                    <td align="left">「足元のフロアライトが不規則に点滅している。これは誰かに誘導されているのか、それとも罠か？」</td>
+                    <td align="left"></td>
+                    <td align="left"></td>
                   </tr>
                   <tr>
                     <td align="center">4</td>
-                    <td align="left">隠された情報／秘密</td>
-                    <td align="left">「壁の裏に奇妙なマーク。これは誰の仕業だ？」</td>
+                    <td align="left">崩壊予兆</td>
+                    <td align="left">「上空からコンクリ片が落ちてくる。天井がきしんでいる。逃げ道はあるか？」</td>
+                    <td align="left"></td>
+                    <td align="left"></td>
                   </tr>
                   <tr>
                     <td align="center">5</td>
                     <td align="left">小競り合い／揺らぎ</td>
                     <td align="left">「予定調和が崩れ始める。わずかな動きが火種となる」</td>
+                    <td align="left"></td>
+                    <td align="left"></td>
                   </tr>
                   <tr>
                     <td align="center">6</td>
                     <td align="left">連鎖反応／混乱</td>
                     <td align="left">「一つの選択が都市構造そのものに波紋を広げる」</td>
+                    <td align="left"></td>
+                    <td align="left"></td>
                   </tr>
                   <tr>
                     <td align="center">7</td>
                     <td align="left">試練／突破</td>
                     <td align="left">「何かを乗り越えねばならない。肉体か、精神か、信念か」</td>
+                    <td align="left"></td>
+                    <td align="left"></td>
                   </tr>
                   <tr>
                     <td align="center">8</td>
                     <td align="left">狂気／矛盾</td>
                     <td align="left">「周囲の言葉が意味を失う。現実にバグがあるとすれば、それはどこだ？」</td>
+                    <td align="left"></td>
+                    <td align="left"></td>
                   </tr>
                   <tr>
                     <td align="center">9</td>
                     <td align="left">裏切り／代償</td>
                     <td align="left">「すべてを賭けて信じた者に裏切られること。それでも進むか？」</td>
+                    <td align="left"></td>
+                    <td align="left"></td>
                   </tr>
                   <tr>
                     <td align="center">10</td>
                     <td align="left">変化／反転</td>
                     <td align="left">「今まで信じていたものが反転する。敵が味方に、味方が敵に？」</td>
+                    <td align="left"></td>
+                    <td align="left"></td>
                   </tr>
                   <tr>
                     <td align="center">J</td>
                     <td align="left">奇襲／戦術</td>
                     <td align="left">「敵はただの力任せではない。君を“読み”に来ている」</td>
+                    <td align="left"></td>
+                    <td align="left"></td>
                   </tr>
                   <tr>
                     <td align="center">Q</td>
                     <td align="left">人間関係／情動</td>
                     <td align="left">「何よりも強いのは“感情”だ。それが走る理由になる」</td>
+                    <td align="left"></td>
+                    <td align="left"></td>
                   </tr>
                   <tr>
                     <td align="center">K</td>
                     <td align="left">謎／決断</td>
                     <td align="left">「なんだ、これは？ こんなことのために人が消失したのか？」</td>
+                    <td align="left"></td>
+                    <td align="left"></td>
                   </tr>
                 </tbody>
               </table>
-            </section>
-            <section class="level5" aria-labelledby="カードイベント辞典">
-              <h5 id="カードイベント辞典">カードイベント辞典</h5>
               <p>
                 🗂️《エンドレス・ラン》カードイベント辞典：♠スペード（障害／トラップ）
                 カード キーワード プロンプト（イベントの導入）
-                ♠A 終末構造 「都市構造そのものが崩壊し始めている。瓦礫が降り注ぎ、空間が歪む。この空間を生き延びる術は？」
-                ♠2 ヒビ 「地面に入ったわずかなひび。だが、その下には何かが潜んでいる気がする……」
-                ♠3 誘導障害 「足元のフロアライトが不規則に点滅している。これは誰かに誘導されているのか、それとも罠か？」
-                ♠4 崩壊予兆 「上空からコンクリ片が落ちてくる。天井がきしんでいる。逃げ道はあるか？」
+                ♠A
+                ♠2
+                ♠3
+                ♠4
                 ♠5 動作不良ドア 「通路を塞ぐ自動扉が何度も開閉を繰り返している。タイミングを見極められるか？」
                 ♠6 過熱ライン 「足元のエネルギー供給ラインが赤く点滅している。ここに立ち続けるのは危険だ」
                 ♠7 ドローン網 「前方にドローンによるスキャニングネットが広がる。テックで突破？ それとも別ルート？」
