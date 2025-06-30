@@ -224,3 +224,14 @@ code, pre {
 .level3,.level4,.level5{
   margin-left: 1.0em;
 }
+
+.sub-title{
+  font-size:20pt;
+  color:#c2fe0c;
+  margin: 1em;
+}
+.credit{
+  padding:1em;
+  margin:1em;
+  font-size:8pt;
+}
