@@ -1,10 +1,159 @@
-:root {
-  font-family: 'Neue Frutiger World', 'Verdana',  'Hiragino Sans', sans-serif;
-  font-weight: 400;
-  line-height: 1.7;
+@page {
+  size: A4; /* 210mm × 297mm */
+  margin: 20mm 25mm; /* 上下20mm、左右25mm */
+  @top-center {
+    content: string(chapter-title); /* ヘッダーに章タイトルを表示 */
+    font-size: 10pt;
+    font-family: 'Arial', sans-serif;
+  }
+  @bottom-center {
+    content: counter(page); /* ページ番号をフッターに表示 */
+    font-size: 10pt;
+  }
 }
-html {
-  max-width: 90ch;
-  margin: auto;
+
+body {
+  font-family: 'Georgia', 'Times New Roman', serif; /* 読みやすいセリフ体 */
+  font-size: 12pt; /* 標準的な本文サイズ */
+  line-height: 1.5; /* 行間を広めに設定して読みやすく */
+  color: #222; /* 濃いめのグレーで目に優しく */
+  text-align: justify; /* 両端揃えでプロフェッショナルな見た目 */
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Helvetica', 'Arial', sans-serif; /* 見出しはサンセリフ体でモダンに */
+  color: #1a1a1a;
+  break-before: auto; /* 見出しがページの途中で始まることを許可 */
+}
+
+h1 {
+  font-size: 24pt; /* 章タイトル */
+  margin-top: 30mm;
+  margin-bottom: 15mm;
+  string-set: chapter-title content(); /* ヘッダーに章タイトルを反映 */
+}
+
+h2 {
+  font-size: 18pt; /* 節タイトル */
+  margin-top: 20mm;
+  margin-bottom: 10mm;
+}
+
+h3 {
+  font-size: 14pt; /* サブセクション */
+  margin-top: 15mm;
+  margin-bottom: 8mm;
+}
+
+h4 {
+  font-size: 12pt; /* 細かい項目 */
+  margin-top: 10mm;
+  margin-bottom: 5mm;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 11pt; /* 表は本文よりやや小さめ */
+  margin: 10mm 0;
+}
+
+th, td {
+  border: 1px solid #ccc; /* 薄いグレーで枠線 */
+  padding: 5mm;
+  text-align: left;
+}
+
+th {
+  background-color: #f5f5f5; /* ヘッダーに薄い背景色 */
+  font-weight: bold;
+}
+
+table caption {
+  font-size: 10pt;
+  font-style: italic;
+  margin-bottom: 5mm;
+  text-align: left;
+}
+
+/* 表がページをまたぐ場合の処理 */
+table {
+  break-inside: avoid; /* 表がページをまたがないように */
+}
+
+.sidebar {
+  float: right;
+  width: 40mm; /* サイドバーの幅を固定 */
+  background-color: #e8f0f5; /* 薄い青で背景を区別 */
+  padding: 5mm;
+  margin: 5mm 0 5mm 10mm;
+  border-left: 3px solid #4682b4; /* 左にアクセントライン */
+  font-size: 10pt;
+  line-height: 1.4;
+  break-inside: avoid; /* サイドバーがページをまたがないように */
+}
+
+.sidebar h4 {
   font-size: 11pt;
+  margin-top: 0;
+  color: #2f4f4f;
+}
+
+ul, ol {
+  margin: 10mm 0;
+  padding-left: 10mm;
+}
+
+li {
+  margin-bottom: 5mm;
+}
+
+strong {
+  font-weight: bold;
+  color: #1a3c5e; /* 強調テキストに濃い青を適用 */
+}
+
+em {
+  font-style: italic;
+  color: #444;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin: 10mm 0;
+  display: block;
+  break-inside: avoid; /* 画像がページをまたがないように */
+}
+
+.figure-caption {
+  font-size: 10pt;
+  font-style: italic;
+  text-align: center;
+  margin-top: 5mm;
+}
+
+a.cross-ref {
+  color: #4682b4;
+  text-decoration: none;
+  border-bottom: 1px dotted #4682b4;
+}
+
+a.cross-ref:hover {
+  background-color: #e8f0f5;
+}
+
+.index {
+  columns: 2; /* 索引を2列で表示 */
+  column-gap: 10mm;
+  font-size: 10pt;
+  margin-top: 20mm;
+}
+
+.index dt {
+  font-weight: bold;
+}
+
+.index dd {
+  margin-bottom: 5mm;
 }
