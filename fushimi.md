@@ -68,3 +68,5 @@ This work is based on the Push SRD, developed, authored, and edited by Cezar Cap
 * 血の再生： 流れた血が再び肉体となり、瞬く間に傷を癒やす。
 * 不浄の汚れ： あらゆる不浄を受け入れることで、肉体の傷を無効化する。
 * 神隠し： 現世から晒された先で高次元の存在から身体をいじられた。危機に瀕すると、一時的に現世から姿を消す。
+
+#### UPBRINGING（育てられ方）：育てられた環境、文化的背景、社会的地位など
