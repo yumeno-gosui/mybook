@@ -22,6 +22,8 @@ This work is based on the Push SRD, developed, authored, and edited by Cezar Cap
 ### 必要な物
 筆記用具・ノートやパソコン・スマホなどの記録道具 / 6面体サイコロ2つ / 俳句を考える際に参考している資料など
 
+----
+
 ## アクション解決
 本作は、Push SRDに則って1つのダイスロールメカニズムであらゆるタイプのアクション解決を行います。
 
