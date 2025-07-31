@@ -193,5 +193,5 @@ This work is based on the Push SRD, developed, authored, and edited by Cezar Cap
 2. 吐き気と嘔吐
 3. ひどい頭痛
 4. とまらないくしゃみ
-5. 大きな失敗が襲ってくる
+5. 大きな失敗が襲ってくるのに気づく
 6. 馬車や牛車、妖怪の行列行進にひかれるかも
