@@ -234,637 +234,123 @@
       </section>
       <section class="level2" aria-labelledby="プロンプト">
         <h2 id="プロンプト">プロンプト</h2>
-        <p>
-          [プロンプトA]と[プロンプトB]のストーリーを作成する際に共通のプロンプト表を利用したい。
-          下記はエンドレスランのプロンプトテーブルだが、これを流用できないだろうか？
-          ・カードのランクによるロケーション特性を、手に入る本日のオススメ具材にするとか？
-          ・スートのフレーバーをスペード=闇市場、ハート=人情、ダイヤ=コーポ品、クラブ=廃墟）にするとか？
-          ・ただ、スートとランク、ここのカード毎にプロンプトを持たせると、ルールの「1D6=引く枚数」が成立しない。
-          1D6の前に2枚引かせて、スートのカテゴリーとランクの特性を出させて、1d6の出目はあくまでイベント数に徹する？
-          ちょっと煩雑？？？
-        </p>
-        <section class="level4" aria-labelledby="スートによるシーンカテゴリ分け">
-          <h4 id="スートによるシーンカテゴリ分け">スートによるシーンカテゴリ分け</h4>
+        <section class="level3" aria-labelledby="スートによる食材やシーンのカテゴリ分け">
+          <h3 id="スートによる食材やシーンのカテゴリ分け">スートによる食材やシーンのカテゴリ分け</h3>
           <table>
             <thead>
               <tr>
                 <th align="center">スート</th>
-                <th align="left">シーンのテーマ</th>
-                <th align="left">内容の一例</th>
+                <th align="left">由来・フレーバー</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td align="center">♠ スペード</td>
-                <td align="left">障害／トラップ</td>
-                <td align="left">落下する道路、敵ドローンの襲撃、崩壊するビル</td>
+                <td align="left">闇市場・違法・裏ルート</td>
               </tr>
               <tr>
                 <td align="center">♥ ハート</td>
-                <td align="left">感情／記憶／人間関係</td>
-                <td align="left">過去の記憶、裏切り者との再会、信頼or裏切りの選択</td>
+                <td align="left">人情・記憶・個人的な縁</td>
               </tr>
               <tr>
                 <td align="center">♦ ダイヤ</td>
-                <td align="left">チャンス／ギア／補給</td>
-                <td align="left">高性能ギアの入手、エネルギーチャージ、隠しルート</td>
+                <td align="left">コーポ製・規格品・ブランド</td>
               </tr>
               <tr>
                 <td align="center">♣ クラブ</td>
-                <td align="left">戦闘／対立／競争</td>
-                <td align="left">ライバルとのスプリント、追跡AIとのバトル、肉弾戦</td>
+                <td align="left">廃墟・拾い物・即席</td>
               </tr>
             </tbody>
           </table>
-        </section>
-        <section class="level4" aria-labelledby="ランクによるロケーション特性">
-          <h4 id="ランクによるロケーション特性">ランクによるロケーション特性</h4>
-          <table>
-            <thead>
-              <tr>
-                <th align="center">ランク</th>
-                <th align="left">ロケーションの性質</th>
-                <th align="left">説明</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td align="center">A</td>
-                <td align="left">中枢・始源的な場所</td>
-                <td align="left">そのジャンルの核。古い制御施設、起源にまつわる場所、現在でも機能している場合が多い。</td>
-              </tr>
-              <tr>
-                <td align="center">2</td>
-                <td align="left">忘れ去られた遺構</td>
-                <td align="left">役目を終えた空間。埃にまみれ、しかし時に重要な手がかりが残される。</td>
-              </tr>
-              <tr>
-                <td align="center">3</td>
-                <td align="left">一見安全だが不安定</td>
-                <td align="left">落ち着いて見えるが、罠や伏兵、誤作動の危険がある。</td>
-              </tr>
-              <tr>
-                <td align="center">4</td>
-                <td align="left">複雑に入り組んだ構造</td>
-                <td align="left">シャフト、裏道、分岐だらけ。潜入や逃走に向いているが、迷う可能性も。</td>
-              </tr>
-              <tr>
-                <td align="center">5</td>
-                <td align="left">稼働中の施設</td>
-                <td align="left">部分的に今も使われており、NPCやAIが出入りしている。交渉や潜伏が可能。</td>
-              </tr>
-              <tr>
-                <td align="center">6</td>
-                <td align="left">隠された仕掛けがある</td>
-                <td align="left">通常の利用とは別に、秘密の機能・ルート・情報が存在。調査に最適。</td>
-              </tr>
-              <tr>
-                <td align="center">7</td>
-                <td align="left">遮蔽物と視界制限</td>
-                <td align="left">視覚的な不利や待ち伏せの温床。アクションが緊張感を伴う。</td>
-              </tr>
-              <tr>
-                <td align="center">8</td>
-                <td align="left">電力や情報が交錯する場</td>
-                <td align="left">エネルギーやデータが流れ込み、過負荷・暴走・情報の断片が発生している。</td>
-              </tr>
-              <tr>
-                <td align="center">9</td>
-                <td align="left">汚染・危険地帯</td>
-                <td align="left">化学・バイオ・放射線などの影響がある。通過にリスクが伴う。</td>
-              </tr>
-              <tr>
-                <td align="center">10</td>
-                <td align="left">移動する構造物</td>
-                <td align="left">動く歩道、浮遊施設、エレベーター群など。時間制限や速度がアクションに影響。</td>
-              </tr>
-              <tr>
-                <td align="center">J</td>
-                <td align="left">異常な機能をもつ場所</td>
-                <td align="left">バグった設備、暴走AI、人格をもった施設など、常識外れの挙動が特徴。</td>
-              </tr>
-              <tr>
-                <td align="center">Q</td>
-                <td align="left">自律的意志をもつシステム</td>
-                <td align="left">施設が人格的に振る舞う。AIや精神ネットワークが関与し、交渉や説得も可能。</td>
-              </tr>
-              <tr>
-                <td align="center">K</td>
-                <td align="left">象徴的な最深部・終着点</td>
-                <td align="left">そのジャンルの頂点的ロケーション。ドラマの山場や対決に適している。</td>
-              </tr>
-            </tbody>
-          </table>
-        </section>
-        <section class="level4" aria-labelledby="ランクによるキーワード一覧">
-          <h4 id="ランクによるキーワード一覧">ランクによるキーワード一覧</h4>
-          <table>
-            <thead>
-              <tr>
-                <th align="center">ランク</th>
-                <th align="left">キーワード</th>
-                <th align="left">プロンプト例（スートに応じて変化）</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td align="center">A</td>
-                <td align="left">特異点／極限状況</td>
-                <td align="left">「すべてが限界を超える。君はこの状況を突破できるか？」</td>
-              </tr>
-              <tr>
-                <td align="center">2</td>
-                <td align="left">小さな兆し／違和感</td>
-                <td align="left">「一見取るに足らない異変が、君の警戒心を刺激する」</td>
-              </tr>
-              <tr>
-                <td align="center">3</td>
-                <td align="left">選択肢／分岐</td>
-                <td align="left">「どちらの道を選ぶ？それぞれに明確なリスクと報酬がある」</td>
-              </tr>
-              <tr>
-                <td align="center">4</td>
-                <td align="left">隠された情報／秘密</td>
-                <td align="left">「壁の裏に奇妙なマーク。これは誰の仕業だ？」</td>
-              </tr>
-              <tr>
-                <td align="center">5</td>
-                <td align="left">小競り合い／揺らぎ</td>
-                <td align="left">「予定調和が崩れ始める。わずかな動きが火種となる」</td>
-              </tr>
-              <tr>
-                <td align="center">6</td>
-                <td align="left">連鎖反応／混乱</td>
-                <td align="left">「一つの選択が都市構造そのものに波紋を広げる」</td>
-              </tr>
-              <tr>
-                <td align="center">7</td>
-                <td align="left">試練／突破</td>
-                <td align="left">「何かを乗り越えねばならない。肉体か、精神か、信念か」</td>
-              </tr>
-              <tr>
-                <td align="center">8</td>
-                <td align="left">狂気／矛盾</td>
-                <td align="left">「周囲の言葉が意味を失う。現実にバグがあるとすれば、それはどこだ？」</td>
-              </tr>
-              <tr>
-                <td align="center">9</td>
-                <td align="left">裏切り／代償</td>
-                <td align="left">「すべてを賭けて信じた者に裏切られること。それでも進むか？」</td>
-              </tr>
-              <tr>
-                <td align="center">10</td>
-                <td align="left">変化／反転</td>
-                <td align="left">「今まで信じていたものが反転する。敵が味方に、味方が敵に？」</td>
-              </tr>
-              <tr>
-                <td align="center">J</td>
-                <td align="left">奇襲／戦術</td>
-                <td align="left">「敵はただの力任せではない。君を“読み”に来ている」</td>
-              </tr>
-              <tr>
-                <td align="center">Q</td>
-                <td align="left">人間関係／情動</td>
-                <td align="left">「何よりも強いのは“感情”だ。それが走る理由になる」</td>
-              </tr>
-              <tr>
-                <td align="center">K</td>
-                <td align="left">謎／決断</td>
-                <td align="left">「なんだ、これは？ こんなことのために人が消失したのか？」</td>
-              </tr>
-            </tbody>
-          </table>
-          <p>
-            プロンプトの情報量を増やすために、キーワードを参照したカードを利用して、以下のイベント/ロケーション表を参照しても良い。
-            全部を盛り込んでも良いし、1部だけ利用したり、そこから自分の思い描いている物語に合わせて調整しても良い。
-          </p>
-        </section>
-        <section class="level4" aria-labelledby="イベント--ロケーション表">
-          <h4 id="イベント--ロケーション表">イベント / ロケーション表</h4>
-          <section class="level5" aria-labelledby="スペード障害トラップ--軍事警備エリア">
-            <h5 id="スペード障害トラップ--軍事警備エリア">♠スペード（障害／トラップ） / （軍事・警備エリア）</h5>
+          <section class="level4" aria-labelledby="ランクによる味や出来事の質">
+            <h4 id="ランクによる味や出来事の質">ランクによる味や出来事の質</h4>
             <table>
               <thead>
                 <tr>
                   <th align="center">ランク</th>
-                  <th align="left">イベント<br>キーワード</th>
-                  <th align="left">プロンプト例</th>
-                  <th align="left">ロケーション<br>キーワード</th>
-                  <th align="left">説明</th>
+                  <th align="left">味／出来事の方向性</th>
+                  <th align="left">厨房側で起きていること</th>
+                  <th align="left">客がこの皿を目にするまでに起きたこと</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <td align="center">A</td>
-                  <td align="left">終末構造</td>
-                  <td align="left">「都市構造そのものが崩壊し始めている。瓦礫が降り注ぎ、空間が歪む。この空間を生き延びる術は？」</td>
-                  <td align="left">中枢制御バンカー</td>
-                  <td align="left">コロニーの戦術AIが眠る要塞区画。最奥に禁断のアクセス端末。</td>
+                  <td align="left">伝説級・極端</td>
+                  <td align="left">今日の仕込みは伝説になるか、事故になるかだ</td>
+                  <td align="left">今日すべてを失うかもしれなかった</td>
                 </tr>
                 <tr>
                   <td align="center">2</td>
-                  <td align="left">ヒビ</td>
-                  <td align="left">「地面に入ったわずかなひび。だが、その下には何かが潜んでいる気がする……」</td>
-                  <td align="left">廃軍事倉庫</td>
-                  <td align="left">荒らされた弾薬庫。使えそうな装備もあるが、地雷が残っている。</td>
+                  <td align="left">かすかな違和感</td>
+                  <td align="left">ごく小さな違和感が、最初からある</td>
+                  <td align="left">ささいな選択が、ここへ来る理由になった</td>
                 </tr>
                 <tr>
                   <td align="center">3</td>
-                  <td align="left">誘導障害</td>
-                  <td align="left">「足元のフロアライトが不規則に点滅している。これは誰かに誘導されているのか、それとも罠か？」</td>
-                  <td align="left">フィールド演習場跡</td>
-                  <td align="left">草に覆われた戦闘訓練区域。自律ターゲットが未だ稼働中。</td>
+                  <td align="left">選択を迫られる</td>
+                  <td align="left">安全な方法と、速い方法のどちらかを選ぶ</td>
+                  <td align="left">本当は来るつもりはなかった</td>
                 </tr>
                 <tr>
                   <td align="center">4</td>
-                  <td align="left">崩壊予兆</td>
-                  <td align="left">「上空からコンクリ片が落ちてくる。天井がきしんでいる。逃げ道はあるか？」</td>
-                  <td align="left">検問タワー</td>
-                  <td align="left">監視装置が今も作動。赤外線センサーに注意。</td>
+                  <td align="left">隠された要素</td>
+                  <td align="left">表に出していない工程が一つある</td>
+                  <td align="left">別の場所で得た匂いや記憶が、足を向けさせた</td>
                 </tr>
                 <tr>
                   <td align="center">5</td>
-                  <td align="left">動作不良ドア</td>
-                  <td align="left">「通路を塞ぐ自動扉が何度も開閉を繰り返している。タイミングを見極められるか？」</td>
-                  <td align="left">軍用ドロイド工場</td>
-                  <td align="left">製造ラインは停止しているが、警戒ドロイドは巡回中。</td>
+                  <td align="left">予定外の介入</td>
+                  <td align="left">想定していない要素が混ざり込む</td>
+                  <td align="left">誰かの一言が、ここへ来させた</td>
                 </tr>
                 <tr>
                   <td align="center">6</td>
-                  <td align="left">過熱ライン</td>
-                  <td align="left">「足元のエネルギー供給ラインが赤く点滅している。ここに立ち続けるのは危険だ」</td>
-                  <td align="left">警備センター</td>
-                  <td align="left">複数の監視カメラが生きている。内部の記録端末は重要情報の宝庫。</td>
+                  <td align="left">連鎖反応</td>
+                  <td align="left">この判断が、後の工程すべてに影響する</td>
+                  <td align="left">空腹にも勝る理由で、ここに来ている</td>
                 </tr>
                 <tr>
                   <td align="center">7</td>
-                  <td align="left">ドローン網</td>
-                  <td align="left">「前方にドローンによるスキャニングネットが広がる。テックで突破？ それとも別ルート？」</td>
-                  <td align="left">対空砲陣地跡</td>
-                  <td align="left">大破したタレットと破損したエネルギー供給源が残る高地。</td>
+                  <td align="left">試される</td>
+                  <td align="left">腕と信念の両方を試される</td>
+                  <td align="left">過去の味を探している</td>
                 </tr>
                 <tr>
                   <td align="center">8</td>
-                  <td align="left">幻覚ノイズ</td>
-                  <td align="left">「警報の音が頭に直接響く。視界が歪む。これは本物の危機か、それとも幻覚か？」</td>
-                  <td align="left">生体検知チェックポイント</td>
-                  <td align="left">身元不明の者は即排除される。偽装が必要。</td>
+                  <td align="left">過剰・歪み</td>
+                  <td align="left">明らかに過剰だが、もう引き返せない</td>
+                  <td align="left">逃げる途中で、ここに流れ着いた</td>
                 </tr>
                 <tr>
                   <td align="center">9</td>
-                  <td align="left">感染プロトコル</td>
-                  <td align="left">「通路に設置された除染ゲートが暴走。無害な物質にすら反応して警報が鳴る」</td>
-                  <td align="left">検疫隔離区画</td>
-                  <td align="left">過去のバイオ兵器流出地。隔離AIがまだ動作中。</td>
+                  <td align="left">代償が必要</td>
+                  <td align="left">完成させるには、何かを犠牲にする必要がある</td>
+                  <td align="left">ここへ来るために、何かを置いてきた</td>
                 </tr>
                 <tr>
                   <td align="center">10</td>
-                  <td align="left">路面崩落</td>
-                  <td align="left">「走っていた通路が突然崩れ、地下空間に落下していく。着地地点は……あるのか？」</td>
-                  <td align="left">レーダードーム</td>
-                  <td align="left">空間スキャン機能を持つ施設。現在は逆探知のリスクも。</td>
+                  <td align="left">反転・裏切り</td>
+                  <td align="left">これまでのやり方が、ここで裏切る</td>
+                  <td align="left">他の奴は、別の屋台へ行ってしまった</td>
                 </tr>
                 <tr>
                   <td align="center">J</td>
-                  <td align="left">巡回ガード</td>
-                  <td align="left">「企業警備のAIガードがパターン外の巡回ルートを取り始めた。ステルスで回避できるか？」</td>
-                  <td align="left">浮遊戦術プラットフォーム</td>
-                  <td align="left">上空に浮かぶ移動拠点。無断侵入には即応戦闘。</td>
+                  <td align="left">想定外の横槍</td>
+                  <td align="left">横から口出しや介入が入る</td>
+                  <td align="left">第三者の介入やトラブルに巻き込まれた</td>
                 </tr>
                 <tr>
                   <td align="center">Q</td>
-                  <td align="left">操作不能トラップ</td>
-                  <td align="left">「あらゆるスイッチが無反応。君のテックさえも干渉されている気がする……」</td>
-                  <td align="left">AIセキュリティ中枢</td>
-                  <td align="left">自律判断型の戦略AIが監視。対話可能だが慎重に。</td>
+                  <td align="left">感情が深く絡む</td>
+                  <td align="left">個人的な感情が、味に混ざってしまう</td>
+                  <td align="left">この味を盗むという決意で来た</td>
                 </tr>
                 <tr>
                   <td align="center">K</td>
-                  <td align="left">全域遮断</td>
-                  <td align="left">「都市ブロック全体がロックダウン。非常用通路を探すか、それとも正面突破するか？」</td>
-                  <td align="left">指令本部跡地</td>
-                  <td align="left">高位軍人の亡霊データが残る。最終決戦の舞台にも。</td>
-                </tr>
-              </tbody>
-            </table>
-          </section>
-          <section class="level5" aria-labelledby="ハート感情記憶人間関係--居住人間活動エリア">
-            <h5 id="ハート感情記憶人間関係--居住人間活動エリア">♥ハート（感情／記憶／人間関係） / （居住・人間活動エリア）</h5>
-            <table>
-              <thead>
-                <tr>
-                  <th align="center">ランク</th>
-                  <th align="left">イベント<br>キーワード</th>
-                  <th align="left">プロンプト例</th>
-                  <th align="left">ロケーション<br>キーワード</th>
-                  <th align="left">説明</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td align="center">A</td>
-                  <td align="left">原点</td>
-                  <td align="left">「なぜ君は走り続けている？心の奥底にある“最初の理由”が、今よみがえる」</td>
-                  <td align="left">オーバーシェルター</td>
-                  <td align="left">指導者層の居住区画。セキュリティも最強。</td>
-                </tr>
-                <tr>
-                  <td align="center">2</td>
-                  <td align="left">面影</td>
-                  <td align="left">「すれ違った誰かの姿が、かつての仲間に酷似していた。幻か、偶然か、それとも……」</td>
-                  <td align="left">雑居住宅ブロック</td>
-                  <td align="left">小さな生活の痕跡。家具やメモが残る。</td>
-                </tr>
-                <tr>
-                  <td align="center">3</td>
-                  <td align="left">分かれ道</td>
-                  <td align="left">「通信が入る。“一緒に逃げるか、君一人で進むか”──どちらを選ぶ？」</td>
-                  <td align="left">路地裏共同市場</td>
-                  <td align="left">自営の屋台が放置されたまま。隠れ家にもなる。</td>
-                </tr>
-                <tr>
-                  <td align="center">4</td>
-                  <td align="left">秘密の記録</td>
-                  <td align="left">「古いログデータが端末に届く。そこには、知ってはいけない過去が記録されていた」</td>
-                  <td align="left">子供用保育ユニット</td>
-                  <td align="left">自動育成ロボが稼働中。記憶AIが話し相手に。</td>
-                </tr>
-                <tr>
-                  <td align="center">5</td>
-                  <td align="left">疑念</td>
-                  <td align="left">「誰かの行動が腑に落ちない。仲間だと思っていたその人に、裏の顔はあるか？」</td>
-                  <td align="left">地下信仰施設</td>
-                  <td align="left">異端的な電子宗教のデジタル聖堂。</td>
-                </tr>
-                <tr>
-                  <td align="center">6</td>
-                  <td align="left">思い出の品</td>
-                  <td align="left">「瓦礫の中から拾ったペンダント。それは、自分が忘れたはずの誰かの持ち物だった」</td>
-                  <td align="left">公共浴場施設</td>
-                  <td align="left">温水が湧き出す静謐な空間。シェル用洗浄ルームも完備。</td>
-                </tr>
-                <tr>
-                  <td align="center">7</td>
-                  <td align="left">友情の試練</td>
-                  <td align="left">「一緒に走ってきた者が傷を負う。足手まといになる──君は見捨てるか、助けるか？」</td>
-                  <td align="left">コミュニティ掲示板広場</td>
-                  <td align="left">誰かの伝言が残っている。ランナーが積極的に利用している</td>
-                </tr>
-                <tr>
-                  <td align="center">8</td>
-                  <td align="left">錯覚</td>
-                  <td align="left">「君は今どこにいる？この景色が現実なのか、自分の記憶の投影なのか分からない」</td>
-                  <td align="left">廃墟病院</td>
-                  <td align="left">医療AIのログが奇妙な症例を記録している。</td>
-                </tr>
-                <tr>
-                  <td align="center">9</td>
-                  <td align="left">裏切りの記憶</td>
-                  <td align="left">「かつて君を捨てた仲間が、今、目の前で倒れている。復讐するか、救うか？」</td>
-                  <td align="left">公共教育センター</td>
-                  <td align="left">未成年の記録が残る。意識訓練端末が稼働。</td>
-                </tr>
-                <tr>
-                  <td align="center">10</td>
-                  <td align="left">感情の逆転</td>
-                  <td align="left">「怒りが慈しみに、希望が絶望に変わる。今この瞬間、君の心はどこへ向かっている？」</td>
-                  <td align="left">エレベーター街区</td>
-                  <td align="left">高低差を利用した住宅構造。一部は崩壊中。</td>
-                </tr>
-                <tr>
-                  <td align="center">J</td>
-                  <td align="left">再燃</td>
-                  <td align="left">「再び会う。交わす視線だけで、戦いか共闘かが決まる──かつての友、かつての敵」</td>
-                  <td align="left">感情記録ホログラム室</td>
-                  <td align="left">住人の「最後の瞬間」が繰り返される。</td>
-                </tr>
-                <tr>
-                  <td align="center">Q</td>
-                  <td align="left">絆</td>
-                  <td align="left">「誰かが君を信じ、託し、背中を押してくれる。それは、進む力になるか？」</td>
-                  <td align="left">管理AIのログルーム</td>
-                  <td align="left">住民管理AIの記憶を探れる。癒しと恐怖の混在。</td>
-                </tr>
-                <tr>
-                  <td align="center">K</td>
-                  <td align="left">喪失</td>
-                  <td align="left">「誰かを失った。取り戻せない現実の中で、君はまだ走れるか？」</td>
-                  <td align="left">ランナーの聖域</td>
-                  <td align="left">かつての勝者が刻んだ記録。あなたの目指す場所かもしれない。</td>
-                </tr>
-              </tbody>
-            </table>
-          </section>
-          <section class="level5" aria-labelledby="ダイヤチャンスギア補給-商業文化エリア">
-            <h5 id="ダイヤチャンスギア補給-商業文化エリア">♦ダイヤ（チャンス／ギア／補給）/ （商業・文化エリア）</h5>
-            <table>
-              <thead>
-                <tr>
-                  <th align="center">ランク</th>
-                  <th align="left">イベント<br>キーワード</th>
-                  <th align="left">プロンプト例</th>
-                  <th align="left">ロケーション<br>キーワード</th>
-                  <th align="left">説明</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td align="center">A</td>
-                  <td align="left">起動</td>
-                  <td align="left">「眠っていた端末が再起動し、内部に未使用のギアが残されている。使うか？」</td>
-                  <td align="left">セレブタワー</td>
-                  <td align="left">高層VIP区画。豪奢なインテリアと闇取引の痕跡。</td>
-                </tr>
-                <tr>
-                  <td align="center">2</td>
-                  <td align="left">ひとしずく</td>
-                  <td align="left">「わずかなエナジー供給装置。全員に配るには足りない。誰に使う？」</td>
-                  <td align="left">放棄されたカフェ街</td>
-                  <td align="left">ネオンサインはまだ明るいが、無人。</td>
-                </tr>
-                <tr>
-                  <td align="center">3</td>
-                  <td align="left">選別</td>
-                  <td align="left">「複数のギアが並ぶが、手に取れるのは1つだけ。それはブーストか、武器か？」</td>
-                  <td align="left">エスカレータープラザ</td>
-                  <td align="left">動き続ける動線施設。視界も制限される。</td>
-                </tr>
-                <tr>
-                  <td align="center">4</td>
-                  <td align="left">情報断片</td>
-                  <td align="left">「廃棄ターミナルに残された古いログ。次のルートに繋がる鍵かもしれない」</td>
-                  <td align="left">室内遊園地跡</td>
-                  <td align="left">子供向けロボットが不気味に動き続けている。</td>
-                </tr>
-                <tr>
-                  <td align="center">5</td>
-                  <td align="left">補給車</td>
-                  <td align="left">「走行ルートの先に企業の無人補給機が残っている。危険を冒してアクセスするか？」</td>
-                  <td align="left">屋内マルチメディアホール</td>
-                  <td align="left">AR残留データが空間にフラッシュバックを起こす。</td>
-                </tr>
-                <tr>
-                  <td align="center">6</td>
-                  <td align="left">ハッキング成功</td>
-                  <td align="left">「敵ドローンの制御に成功。短時間だけ君の味方になる。どこで使う？」</td>
-                  <td align="left">地下ショッピング街</td>
-                  <td align="left">複数階層の迷宮。廃品の中に希少アイテムも。</td>
-                </tr>
-                <tr>
-                  <td align="center">7</td>
-                  <td align="left">自動回復装置</td>
-                  <td align="left">「破損した医療ユニットを修復できた。使用すればスタミナが回復するが、時間がかかる」</td>
-                  <td align="left">カジノ・ヴァーチャルゾーン</td>
-                  <td align="left">ジャックイン端末が機能。一時的に強化も可。</td>
-                </tr>
-                <tr>
-                  <td align="center">8</td>
-                  <td align="left">ブーストモジュール</td>
-                  <td align="left">「落ちていたスピードブースター。ただし連続使用はオーバーヒートのリスクあり」</td>
-                  <td align="left">ファッションギャラリー</td>
-                  <td align="left">謎のマネキンたちが見つめる空間。センサーは健在。</td>
-                </tr>
-                <tr>
-                  <td align="center">9</td>
-                  <td align="left">潜在エリア</td>
-                  <td align="left">「見捨てられた区画の奥に、未使用の研究ラボが眠っていた。探索する？」</td>
-                  <td align="left">スポーツアリーナ</td>
-                  <td align="left">破損した試合機械と巨大スピーカー。音響兵器に転用可。</td>
-                </tr>
-                <tr>
-                  <td align="center">10</td>
-                  <td align="left">再起動コード</td>
-                  <td align="left">「壊れたドアの再起動コードを発見。このルートはショートカットになるが……罠かも？」</td>
-                  <td align="left">サイバー劇場</td>
-                  <td align="left">VR記録が無限再生中。演劇AIと接触可能。</td>
-                </tr>
-                <tr>
-                  <td align="center">J</td>
-                  <td align="left">システム上書き</td>
-                  <td align="left">「都市ネットワークの隙間を突き、マップの一部を書き換えるチャンス」</td>
-                  <td align="left">データパーティホール</td>
-                  <td align="left">仮想記憶体が人格を持ち始めている。</td>
-                </tr>
-                <tr>
-                  <td align="center">Q</td>
-                  <td align="left">技術共有</td>
-                  <td align="left">「仲間のテックスキルを借りることで、一度だけ君の能力を強化できる」</td>
-                  <td align="left">文化保存AIサーバー</td>
-                  <td align="left">アートと記録を守るAI。質問には丁寧だが感情的。</td>
-                </tr>
-                <tr>
-                  <td align="center">K</td>
-                  <td align="left">フルリペア</td>
-                  <td align="left">「高性能ナノメディックユニットを発見。君の肉体が完全回復する──だが場所を特定される」</td>
-                  <td align="left">総合商業コア</td>
-                  <td align="left">企業連盟の本拠地。企業用セキュリティが残る。</td>
-                </tr>
-              </tbody>
-            </table>
-          </section>
-          <section class="level5" aria-labelledby="クラブ戦闘対立競争-クラブ工業インフラ区域">
-            <h5 id="クラブ戦闘対立競争-クラブ工業インフラ区域">♣クラブ（戦闘／対立／競争）/ クラブ（工業・インフラ区域）</h5>
-            <table>
-              <thead>
-                <tr>
-                  <th align="center">ランク</th>
-                  <th align="left">イベント<br>キーワード</th>
-                  <th align="left">プロンプト例</th>
-                  <th align="left">ロケーション<br>キーワード</th>
-                  <th align="left">説明</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td align="center">A</td>
-                  <td align="left">開戦</td>
-                  <td align="left">「誰かが銃声を放った──ここからは速さと判断が命を分ける」</td>
-                  <td align="left">フュージョンリアクター</td>
-                  <td align="left">コロニーの心臓部。未調整の出力により危険極まりない。</td>
-                </tr>
-                <tr>
-                  <td align="center">2</td>
-                  <td align="left">援軍</td>
-                  <td align="left">「交戦中、敵の通信により増援が近づいている。君はどう迎え撃つ？」</td>
-                  <td align="left">資材搬入ドック</td>
-                  <td align="left">コンテナが山積み。隠れるにはうってつけ。</td>
-                </tr>
-                <tr>
-                  <td align="center">3</td>
-                  <td align="left">乱戦</td>
-                  <td align="left">「複数の勢力が交差する混戦区域に突入。誰と手を組む？」</td>
-                  <td align="left">排気ダクト群</td>
-                  <td align="left">迷路のように入り組んだ換気路。アクセス不可エリアへ潜入可能。</td>
-                </tr>
-                <tr>
-                  <td align="center">4</td>
-                  <td align="left">先制攻撃</td>
-                  <td align="left">「わずかな油断を突くチャンス。先に動けば優位、だがリスクも大きい」</td>
-                  <td align="left">メンテナンスシャフト</td>
-                  <td align="left">通信網の中枢へ向かう隠しルートがある。</td>
-                </tr>
-                <tr>
-                  <td align="center">5</td>
-                  <td align="left">奇襲</td>
-                  <td align="left">「壁の影から誰かが飛び出す。敵か、それとも……」</td>
-                  <td align="left">発電施設B区画</td>
-                  <td align="left">非常用電源ユニットが稼働中。過充電に注意。</td>
-                </tr>
-                <tr>
-                  <td align="center">6</td>
-                  <td align="left">火力差</td>
-                  <td align="left">「敵の武装が圧倒的。正面突破は無謀だ。ならば、別の手段を？」</td>
-                  <td align="left">給水タンク群</td>
-                  <td align="left">ひび割れた水槽と腐食したパイプ。中に何かが潜む。</td>
-                </tr>
-                <tr>
-                  <td align="center">7</td>
-                  <td align="left">接近戦</td>
-                  <td align="left">「スピードでは逃げ切れない──距離はゼロ。殴り合う覚悟はあるか？」</td>
-                  <td align="left">通信ハブ</td>
-                  <td align="left">中継塔が林立。信号干渉が激しいが情報収集には最適。</td>
-                </tr>
-                <tr>
-                  <td align="center">8</td>
-                  <td align="left">挟撃</td>
-                  <td align="left">「敵の戦術は洗練されていた。左右から包囲される。突破口はあるか？」</td>
-                  <td align="left">補給搬送ライン</td>
-                  <td align="left">自動貨物列車が定期巡回。運搬に利用できる可能性も。</td>
-                </tr>
-                <tr>
-                  <td align="center">9</td>
-                  <td align="left">因縁</td>
-                  <td align="left">「過去に敗れたランナーが、ここで君を待ち受けていた。“リマッチ”が始まる」</td>
-                  <td align="left">廃棄処理炉</td>
-                  <td align="left">可燃性ガスが充満。火気厳禁。</td>
-                </tr>
-                <tr>
-                  <td align="center">10</td>
-                  <td align="left">過剰反応</td>
-                  <td align="left">「武装システムが暴走し、敵味方問わず攻撃を始める。混乱の中をどう動く？」</td>
-                  <td align="left">冷却装置コア</td>
-                  <td align="left">絶対温度領域の凍結施設。熱源は異常と認識される。</td>
-                </tr>
-                <tr>
-                  <td align="center">J</td>
-                  <td align="left">戦術転換</td>
-                  <td align="left">「戦況が変わる。敵が撤退を始めた……だがそれは罠か？ 追うか？」</td>
-                  <td align="left">高所整備用ドローンポート</td>
-                  <td align="left">自動整備機が突如起動。あなたを機材と誤認する。</td>
-                </tr>
-                <tr>
-                  <td align="center">Q</td>
-                  <td align="left">同盟</td>
-                  <td align="left">「敵と思っていた相手が、君に武器を投げ渡してきた。“一時的な共闘だ”」</td>
-                  <td align="left">製造AI管制室</td>
-                  <td align="left">モノづくりを最適化するが、目的のために安全性を無視する。</td>
-                </tr>
-                <tr>
-                  <td align="center">K</td>
-                  <td align="left">決闘</td>
-                  <td align="left">「進むには、この強敵を倒すしかない──お前 vs あいつ、勝者だけが先に行ける」</td>
-                  <td align="left">重工メガファクトリー</td>
-                  <td align="left">自走式クレーンやレーザーカッターが無人で稼働中。</td>
+                  <td align="left">決断・終着点</td>
+                  <td align="left">この仕込みで、流儀を決めることになる</td>
+                  <td align="left">この店に来ること自体が、覚悟だった</td>
                 </tr>
               </tbody>
             </table>
