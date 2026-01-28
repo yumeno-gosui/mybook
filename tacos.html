@@ -16,12 +16,12 @@
         </blockquote>
       </blockquote>
       <p>
-        あなたは、崩壊した日本のネオン廃墟区にある「Neon Sushi Shack」の屋台主としてストリートフードを売りながら、コーポのドローンが飛ぶ空の下で客を生かす日々を生き繋いでる。
+        あなたは、崩壊した日本のネオン廃墟区にある「Vat-Grown@maki」の屋台主としてストリートフードを売りながら、コーポのドローンが飛ぶ空の下で客を生かす日々を生き繋いでる。
         定番は培養アジのオシニギリだが、オーガニックできっと本物の食材はいつでも求めていた。食べれば、きっと誰もが祖国の味を思い出す……はず。
       </p>
       <section class="level2" aria-labelledby="what-you-need">
         <h2 id="what-you-need">WHAT YOU NEED</h2>
-        <p>空腹を凌駕する想像力、ポーカーダイス（または6面体サイコロ）1つ、ペンと紙（もしくはそれに替わる記憶媒体）、トランプデッキ1組</p>
+        <p>空腹を凌駕する想像力、ポーカーダイス（または6面体サイコロ）1つ、ペンと紙（もしくはそれに替わる記憶媒体）、トランプデッキ1組（ジョーカー含む）、ジョーカーの効果発現を管理するマーカー2色</p>
       </section>
       <section class="level2" aria-labelledby="setting-up-shop">
         <h2 id="setting-up-shop">SETTING UP SHOP</h2>
@@ -38,11 +38,93 @@
       <section class="level2" aria-labelledby="setting-up-shop-1">
         <h2 id="setting-up-shop-1">SETTING UP SHOP</h2>
         <p>
-          日記の書き手であり、「Neon Sushi Shack」の屋台主であるあなたの設定を決めます。
+          日記の書き手であり、「Vat-Grown@maki」の屋台主であるあなたの設定を決めます。
           設定の他に、あなたは能力値して【幸運値】が設定されています。初期値は「0」です。
           設定を含めて決め終わったら、トランプデッキを良くシャッフルして上から5枚引いてひとまとめにします。
           この5枚が「あなたの山札」です。それ以外は、以降「プロンプトの山札」と呼びます。
         </p>
+      </section>
+      <section class="level2" aria-labelledby="action-check">
+        <h2 id="action-check">Action Check</h2>
+        <section class="level3" aria-labelledby="サイコロ値表">
+          <h3 id="サイコロ値表">サイコロ値表</h3>
+          <table>
+            <thead>
+              <tr>
+                <th align="center">値</th>
+                <th align="center">ポーカーダイス</th>
+                <th align="center">6面体サイコロ</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="center">9</td>
+                <td align="center">9</td>
+                <td align="center">1</td>
+              </tr>
+              <tr>
+                <td align="center">10</td>
+                <td align="center">10</td>
+                <td align="center">2</td>
+              </tr>
+              <tr>
+                <td align="center">11</td>
+                <td align="center">J</td>
+                <td align="center">3</td>
+              </tr>
+              <tr>
+                <td align="center">12</td>
+                <td align="center">Q</td>
+                <td align="center">4</td>
+              </tr>
+              <tr>
+                <td align="center">13</td>
+                <td align="center">K</td>
+                <td align="center">5</td>
+              </tr>
+              <tr>
+                <td align="center">14</td>
+                <td align="center">A</td>
+                <td align="center">6</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section class="level3" aria-labelledby="行動判定">
+          <h3 id="行動判定">行動判定</h3>
+          <p>ダイスの出目でサイコロ値表を参照した値 + 「あなたの山札」から引いた1枚のランク（15未満で追加強制、合計後幸運-1で+成功購入可）。</p>
+          <table>
+            <thead>
+              <tr>
+                <th align="center">判定値</th>
+                <th align="left">結果</th>
+                <th align="center">幸運値変動</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="center">15</td>
+                <td align="left">大成功</td>
+                <td align="center">+1</td>
+              </tr>
+              <tr>
+                <td align="center">16-21</td>
+                <td align="left">成功</td>
+                <td align="center">±0</td>
+              </tr>
+              <tr>
+                <td align="center">14以下</td>
+                <td align="left">不穏な成功</td>
+                <td align="center">±0</td>
+              </tr>
+              <tr>
+                <td align="center">22以上</td>
+                <td align="left">致命的な失敗</td>
+                <td align="center">-1</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
       </section>
       <section class="level2" aria-labelledby="play-overview">
         <h2 id="play-overview">PLAY OVERVIEW</h2>
@@ -62,7 +144,7 @@
               <li>16〜21（成功）：十分な成果を得られる。</li>
               <li>それ以外（不穏な成功）：成果はあるが、何かしら問題がつきまとう。</li>
               <li>
-                22以上：致命的な失敗。幸運値-1。
+                22以上（致命的な失敗）：幸運値-1。
                 [プロンプトA]で使用したすべてのカードは「あなたの山札」に加えて、かならずシャッフルする。
               </li>
             </ul>
@@ -323,6 +405,36 @@
                 <td align="left">決断・終着点</td>
                 <td align="left">この仕込みで、流儀を決めることになる</td>
                 <td align="left">この店に来ること自体が、覚悟だった</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section class="level3" aria-labelledby="ジョーカー">
+          <h3 id="ジョーカー">ジョーカー</h3>
+          <p>本作でのジョーカーは、物語にかなりの混乱を与えることになります。</p>
+          <ul>
+            <li>ジョーカーを引いた場合、その日のイベントをすべて破棄してジョーカーのプロンプトを優先させます。</li>
+            <li>「幸運値」の±が反転します。0なら何も起こりません。</li>
+            <li>ジョーカーも、「あなたの山札」に加わります。ジョーカーの効果をリセットするには、もう一度ジョーカーを引き当てるか、自作絵札1枚の内容を反転させる(ポジティブ⇔ネガティブ)必要があります。</li>
+          </ul>
+          <table>
+            <thead>
+              <tr>
+                <th align="left">ジョーカーの色</th>
+                <th align="center">効果</th>
+                <th align="left">内容</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="left">赤</td>
+                <td align="center">ノイズ</td>
+                <td align="left">街にノイズが走り、ドローンが謎の統制を見せ、ネオンが瞬断し、停電などが起こる。復旧しても街のルールが上書きされる。1d6を振った際、「6-出目」の値を利用する</td>
+              </tr>
+              <tr>
+                <td align="left">黒</td>
+                <td align="center">リセット</td>
+                <td align="left">あなたの記憶が消えたり、噂やニュースが一気に広まり、見覚えのある客が“別人”として現れたりする。ゲーム中、「あなたの山札」の下からカードを引くことになる</td>
               </tr>
             </tbody>
           </table>
