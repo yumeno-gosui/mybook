@@ -40,3 +40,6 @@
 
 必要がありそうなら、TRPG安全ツールキットをご参照ください。
 https://ttrpgsafetytoolkit.com/
+
+----
+
