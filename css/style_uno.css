@@ -306,3 +306,7 @@ code, pre {
   padding: 4mm;
   background-color: #eee;
 }
+
+.repage{
+  break-before: page;
+}
