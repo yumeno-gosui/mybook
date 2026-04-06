@@ -1,0 +1,308 @@
+@page {
+  size: A4; /* 210mm × 297mm */
+  margin: 20mm 25mm; /* 上下20mm、左右25mm */
+  background-color: #efede4;
+  @top-center {
+    content: string(chapter-title); /* ヘッダーに章タイトルを表示 */
+    font-size: 10pt;
+    font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", "Meiryo", sans-serif;
+  }
+  @bottom-center {
+    content: counter(page); /* ページ番号をフッターに表示 */
+    block-size: 10Q;
+    font-size: 10Q;
+    margin-blok-start: 4mm;
+  }
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", "Meiryo", sans-serif; /* 読みやすいセリフ体 */
+  font-size: 13Q; /* 標準的な本文サイズ */
+  line-height: 24Q; /* 行間を広めに設定して読みやすく */
+  color: #666; /* 濃いめのグレーで目に優しく */
+  text-align: justify; /* 両端揃えでプロフェッショナルな見た目 */
+  background-color: #efede4;
+}
+
+h1, h2, h3, h4 , h5 {
+  font-family: "Noto Sans JP", "Fraunces", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", "Meiryo", sans-serif; /* 見出しはサンセリフ体でモダンに */
+  color: #222;
+  font-weight: bold;
+  line-height: 1.4;
+  page-break-after: avoid;
+  break-before: auto; /* 見出しがページの途中で始まることを許可 */
+}
+
+h1 {
+  font-size: 40Q; /* 章タイトル */
+  margin: 2em 0 0.5em 0;
+  margin-top: 30mm;
+  margin-bottom: 15mm;
+  padding-bottom: 0.2em;
+  font-weight: 700;
+  string-set: chapter-title content(); /* ヘッダーに章タイトルを反映 */
+}
+
+h2 {
+    margin: 2em 0 0.5em 0;
+}
+
+h2 p {
+  font-size: 26Q; /* 節タイトル */
+  /* border-left: 10px solid #c2fe0c;
+  padding-left: 0.5em;*/
+}
+.h2-kazari{
+  font-family: "Fraunces", sans-serif; /* 見出しはサンセリフ体でモダンに */
+  font-size: 15Q;
+  margin-top: 10mm;
+  margin-bottom:0;
+  color: #999;
+}
+
+h3 {
+  font-size: 21Q; /* サブセクション */
+  margin-top: 7mm;
+  margin-bottom: 4mm;
+  padding: 0.5em 0;
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #666;
+}
+
+h4 {
+  font-size: 18Q; /* 細かい項目 */
+  margin-top: 10mm;
+  margin-bottom: 5mm;
+  padding: 0.5em;
+  /* border-left: 4px solid #666; */
+  background-color: #eee;
+}
+
+h5 {
+  font-size: 15Q; /* 細かい項目 */
+  margin-top: 10mm;
+  margin-bottom: 2mm;
+  padding-bottom: 0.5em;
+  border-bottom: 2px solid #2d6092;
+}
+.level5 p{
+  border-top: 1px solid #2d6092;
+  margin-top: 2mm;
+  padding-top: 2mm;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 2em 0;
+}
+
+p {
+  text-align: justify;
+  margin: 0;
+  /*margin: 1em 0;*/
+  line-break: strict;
+  word-break: break-word;
+  text-spacing: ideograph-alpha ideograph-numeric;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 8pt; /* 表は本文よりやや小さめ */
+  margin: 1em 0;
+}
+
+thead {
+  background-color: #a4d0ff;
+}
+
+th, td {
+  border: 1px solid #ccc; /* 薄いグレーで枠線 */
+  padding: 0.4em 0.6em;
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  background-color: #a4d0ff; /* ヘッダーに薄い背景色 */
+  font-weight: bold;
+}
+
+table caption {
+  font-size: 9pt;
+  font-style: italic;
+  margin-bottom: 5mm;
+  text-align: left;
+}
+
+/* 表がページをまたぐ場合の処理 */
+table, figure {
+  break-inside: avoid; /* 表がページをまたがないように */
+}
+
+.sidebar {
+  float: right;
+  width: 40mm; /* サイドバーの幅を固定 */
+  background-color: #e8f0f5; /* 薄い青で背景を区別 */
+  padding: 5mm;
+  margin: 5mm 0 5mm 10mm;
+  border-left: 3px solid #4682b4; /* 左にアクセントライン */
+  font-size: 10pt;
+  line-height: 1.4;
+  break-inside: avoid; /* サイドバーがページをまたがないように */
+}
+
+.sidebar h4 {
+  font-size: 11pt;
+  margin-top: 0;
+  color: #2f4f4f;
+}
+
+ul, ol {
+  margin: 5mm 0;
+  padding-left: 5mm;
+}
+
+li {
+  margin-bottom: 2mm;
+}
+
+strong {
+  font-weight: bold;
+  color: #2d6092; /* 強調テキストに濃い青を適用 */
+}
+
+em {
+  font-style: italic;
+  color: #444;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin: 10mm 0;
+  display: block;
+  break-inside: avoid; /* 画像がページをまたがないように */
+}
+
+.figure-caption {
+  font-size: 10pt;
+  font-style: italic;
+  text-align: center;
+  margin-top: 5mm;
+}
+
+a.cross-ref {
+  color: #4682b4;
+  text-decoration: none;
+  border-bottom: 1px dotted #4682b4;
+}
+
+a.cross-ref:hover {
+  background-color: #e8f0f5;
+}
+
+.index {
+  columns: 2; /* 索引を2列で表示 */
+  column-gap: 10mm;
+  font-size: 10pt;
+  margin-top: 20mm;
+}
+
+.index dt {
+  font-weight: bold;
+}
+
+.index dd {
+  margin-bottom: 5mm;
+}
+
+.box {
+  border: 2px solid #444;
+  padding: 1em;
+  background: #f0f0f0;
+  margin: 1.5em 0;
+}
+
+blockquote {
+  margin: 1em 2em;
+  padding: 0.5em 1em;
+  border-left: 4px solid #999;
+  background: #f9f9f9;
+}
+
+code, pre {
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", "Meiryo", sans-serif;
+  font-size: 10pt;
+  background-color: #f8f8f8;
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+}
+
+.level3,.level4,.level5{
+  margin-left: 1.5em;
+}
+
+.sub-title{
+  font-size:20pt;
+  color:#c2fe0c;
+  margin: 1em;
+}
+.credit{
+  padding:1em;
+  margin:1em;
+  font-size:8pt;
+}
+.foo {
+  display: flex;
+  justify-content: flex-end;
+}
+.f-balloon {
+  position: relative;
+  display: inline-block;
+  background: #2d6092;
+  border-radius: 30px;
+  padding: 10px;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 5mm;
+}
+.f-balloon:before {
+  content: "";
+  /* borderで三角形を作る */
+  border: 10px solid transparent;
+  border-bottom: 10px solid #2d6092;
+  /* 配置する */
+  position: absolute;
+  top: -45%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.no-dot {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.question{
+  font-size: 16Q;
+  font-weight: 600;
+  color: #dd572e;
+}
+
+.answer{
+  font-size: 14Q;
+  font-weight: 400;
+  margin-left: 4mm;
+}
+
+.wave-rule{
+  margin: 2mm;
+  padding: 4mm;
+  background-color: #eee;
+}
