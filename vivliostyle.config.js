@@ -1,9 +1,9 @@
 module.exports = {
-  title: 'エンドレス・ラン',
+  title: '日常が少しだけ異世界に染まる時間',
   author: '午睡キネマ <yumeno.gosui@gmail.com>',
   language: 'ja',
-  theme: 'css/style4.css',
+  theme: 'css/style5.css',
   entry: [
-    "marathon.md",
+    "Uno.md",
   ],
 }
