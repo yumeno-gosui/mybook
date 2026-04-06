@@ -3,12 +3,12 @@
   margin: 20mm 25mm; /* 上下20mm、左右25mm */
   background-color: #efede4;
   @top-center {
-    content: string(chapter-title); /* ヘッダーに章タイトルを表示 */
+    content: string(chapter-title) " / " env(doc-title); /* ヘッダーに章タイトルを表示 */
     font-size: 10pt;
     font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", "Meiryo", sans-serif;
   }
   @bottom-center {
-    content: counter(page); /* ページ番号をフッターに表示 */
+    content: counter(page) " / " counter(pages); /* ページ番号をフッターに表示 */
     block-size: 10Q;
     font-size: 10Q;
     margin-blok-start: 4mm;
