@@ -25,6 +25,10 @@
   orphans: 1;
 }
 
+.chapter-title {
+    position: running(chapterHeader);
+}
+
 body {
   font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", "Meiryo", sans-serif; /* 読みやすいセリフ体 */
   font-size: 13Q; /* 標準的な本文サイズ */
