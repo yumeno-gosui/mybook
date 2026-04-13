@@ -1,6 +1,4 @@
-# ジャーナリングRPG  
-**『幻想都市への迷い込み（The City of Unfinished Dreams）』**  
-**ポーカーダイス完全ミックス版（観客視点固定版）**
+# ジャーナリングRPG<br>『幻想都市への迷い込み（The City of Unfinished Dreams）』**  
 
 ## テーマ
 - 表現できなかったもの  
