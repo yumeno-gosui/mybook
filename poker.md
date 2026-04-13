@@ -1,4 +1,4 @@
-# ジャーナリングRPG<br>『幻想都市への迷い込み（The City of Unfinished Dreams）』**  
+# ジャーナリングRPG<br>『幻想都市への迷い込み（The City of Unfinished Dreams）』 
 
 ## テーマ
 - 表現できなかったもの  
