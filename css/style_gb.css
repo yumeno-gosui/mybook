@@ -1,1 +1,120 @@
+/* テーマを上書き・追加する想定 */
+@import '@vivliostyle/theme-bunko';   /* または theme-base */
 
+/* ===== ページ設定 ===== */
+@page {
+  size: 105mm 148mm;          /* 文庫寄り。A5なら 148mm 210mm */
+  margin: 12mm 12mm 14mm 12mm;
+}
+
+@page :left {
+  @top-left {
+    content: string(section-num) "　" env(doc-title);
+    font-size: 8pt;
+  }
+  @bottom-center {
+    content: counter(page);
+  }
+}
+@page :right {
+  @top-right {
+    content: string(section-num);
+    font-size: 8pt;
+  }
+  @bottom-center {
+    content: counter(page);
+  }
+}
+
+/* ===== 本文 ===== */
+:root {
+  --vs-font-size: 9.5pt;      /* 少し小さめにして密度を上げる */
+  --vs-line-height: 1.6;
+  /* bunko の場合 */
+  /* --vs-theme-bunko--num-of-line: 18; */
+  /* --vs-theme-bunko--num-of-character: 36; */
+}
+
+body {
+  font-family: "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", serif;
+}
+
+/* ===== セクション（エントリー） ===== */
+.entry,
+section.entry {
+  break-before: auto;         /* 必要なら page に変更して1セクション1ページに */
+  margin-block: 1.2em 0.8em;
+  padding-block-start: 0.4em;
+  border-block-start: 0.4pt solid #ccc;  /* 区切り線（好みで） */
+}
+
+.entry:first-of-type {
+  border-block-start: none;
+  break-before: avoid;
+}
+
+/* セクション番号を大きく目立たせる */
+.section-number,
+.entry > h2,
+.entry > .num {
+  string-set: section-num content();   /* 柱用 */
+  font-size: 1.4em;
+  font-weight: bold;
+  margin: 0 0 0.4em;
+  text-align: center;         /* or left */
+  /* 番号だけ大きくしたい場合の例 */
+  /* font-family: "Helvetica Neue", sans-serif; */
+}
+
+/* ===== 選択肢 ===== */
+.choices,
+ul.choices {
+  margin: 0.8em 0 0.4em;
+  padding-inline-start: 1.2em;
+  list-style: none;           /* 番号や記号を自分で付ける場合 */
+}
+
+.choices li {
+  margin-block: 0.25em;
+  line-height: 1.5;
+}
+
+.choices a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 0.6pt dotted currentColor;  /* 印刷でもわかるリンク感 */
+  padding-inline-end: 0.3em;
+}
+
+.choices a::after {
+  content: " → " attr(href);  /* href="#45" の場合に番号を表示したいときは要工夫 */
+  /* または単純に */
+  /* content: " →"; */
+  font-size: 0.9em;
+  opacity: 0.8;
+}
+
+/* 選択肢をボックス風にする例 */
+.choices.box {
+  border: 0.6pt solid #333;
+  border-radius: 2px;
+  padding: 0.5em 0.8em;
+  background: #fafafa;
+  margin-inline: 0.5em;
+}
+
+/* ===== その他便利スタイル ===== */
+/* 死亡・エンディングなど特別なセクション */
+.entry.ending,
+.entry.death {
+  border: 1.2pt double #666;
+  padding: 0.6em;
+  background: #f8f8f8;
+}
+
+/* 小さな注釈・ヒント */
+.hint {
+  font-size: 0.85em;
+  color: #555;
+  margin-block: 0.4em;
+}
